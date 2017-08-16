@@ -1,0 +1,809 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: .14rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "宋体";
+    text-size-adjust: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img,
+div,
+body,
+html,
+ul,
+li,
+a {
+    -webkit-touch-callout: none;
+}
+
+input,
+button {
+    outline: 0;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #666;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+}
+
+.contrduction_smallbox {
+    display: block;
+}
+
+.contrduction_bigbox {
+    width: 100%;
+    height: auto;
+    .bar_one {
+        width: 100%;
+        height: 50px;
+        background: #f8f8f8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -3;
+    }
+    .bar_two {
+        width: 100%;
+        height: 65px;
+        background: #A51C30;
+        position: absolute;
+        top: 170px;
+        left: 0;
+        z-index: -5;
+    }
+    .wapper {
+        width: 62.5%;
+        height: auto;
+        margin: auto;
+        .header_top {
+            background: #f8f8f8;
+            width: 100%;
+            height: 50px;
+            margin: auto;
+            .top_center {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 50px;
+                margin: auto;
+                p {
+                    font-size: 16px;
+                    line-height: 50px;
+                    color: #a51c30;
+                }
+            }
+        }
+        header {
+            width: 100%;
+            height: 120px;
+            display: flex;
+            a:nth-child(1) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .left {
+                    width: 98px;
+                    height: auto;
+                }
+            }
+            a:nth-child(2) {
+                flex: 1;
+            }
+            a:nth-child(3) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .right {
+                    width: 265px;
+                    height: auto;
+                    margin-top: 30px;
+                }
+            }
+        }
+        nav {
+            width: 100%;
+            height: 65px;
+            background: #A51C30;
+            display: flex;
+            .list {
+                width: 100%;
+                height: 65px;
+                margin: 0 auto;
+                display: flex;
+                li {
+                    line-height: 65px;
+                    display: flex;
+                    float: left;
+                    width: 18%;
+                    justify-content: center;
+                    align-items: center;
+                    &:nth-child(2n+1) {
+                        width: 2%;
+                    }
+                    &:first-child {
+                        width: .5%;
+                    }
+                    &:last-child {
+                        width: .5%;
+                    }
+                    &:nth-child(8) {
+                        width: 23%;
+                    }
+                    a {
+                        display: inline-block;
+                        color: white;
+                        display: flex;
+                        flex: 1;
+                        p {
+                            margin: auto;
+                            font-size: 20px;
+                        }
+                    }
+                    img {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .banner {
+        width: 100%;
+        height: auto;
+    }
+    .com_title {
+        width: 1200px;
+        height: 820px;
+        margin: auto;
+        z-index: 1;
+        text-align: center;
+        h3 {
+            font-family: "PingFang SC";
+            font-size: 36px;
+            font-weight: 800;
+            padding: 90px 0 20px 0;
+            color: #A51C30;
+        }
+        p {
+            font-size: 24px;
+            color: #A51C30;
+        }
+        .com_articale {
+            box-shadow: 5px 5px 5px #ebebeb;
+            margin-top: 30px;
+            width: 100%;
+            height: 570px;
+            background: #f8f8f8;
+            .articale_left {
+                width: 345px;
+                padding: 40px 0px 0 60px;
+                img {
+                    width: 340px;
+                    display: inline-block;
+                    float: left;
+                }
+            }
+            .articale_right {
+                width: 750px;
+                text-align: left;
+                float: right;
+                padding: 0px 60px 10px 0;
+                p {
+                    text-indent: 2em;
+                    font-size: 16px;
+                    color: #666666;
+                    font-weight: 500;
+                    text-align: left;
+                    margin-bottom: 10px;
+                    line-height: 28px;
+                    text-align: justify;
+                }
+            }
+            .articale_bottom {
+                margin-top: -20px;
+                float: left;
+                width: 1100px;
+                height: 150px;
+                padding: 0px 80px 10px 60px;
+                p {
+                    margin-bottom: 10px;
+                    line-height: 28px;
+                    text-align: justify;
+                    width: 1100px;
+                    display: block;
+                    font-size: 16px;
+                    color: #666666;
+                    font-weight: 500;
+                    &:nth-child(2) {
+                        text-indent: 2em;
+                    }
+                }
+            }
+        }
+    }
+    .map_title {
+        width: 1100px;
+        height: auto;
+        margin: 0 auto;
+        h4 {
+            margin-top: 90px;
+            font-size: 30px;
+            font-weight: 800;
+            color: #A51C30;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .map_roat {
+            width: 1100px;
+            margin: 0 auto;
+        }
+    }
+    .jianjie {
+        width: 1100px;
+        margin: 0 auto;
+        h3 {
+            font-family: "PingFang SC";
+            font-size: 36px;
+            font-weight: 800;
+            color: #A51C30;
+            padding: 100px 0 20px 0;
+        }
+        p {
+            margin-bottom: 10px;
+            line-height: 36px;
+            text-align: justify;
+            width: 1100px;
+            display: block;
+            font-size: 20px;
+            color: #666666;
+            text-indent: 2em;
+        }
+    }
+    .wenhua {
+        width: 1100px;
+        margin: 0 auto;
+        h3 {
+            font-family: "PingFang SC";
+            font-size: 36px;
+            font-weight: 800;
+            color: #A51C30;
+            padding: 80px 0 20px 0;
+        }
+        .wh {
+            width: 1200px;
+            height: auto;
+            position: relative;
+        }
+        h4 {
+            position: absolute;
+            left: 70px;
+            top: 240px;
+            font-size: 24px;
+            font-weight: 500;
+            color: #A51C30;
+        }
+        .mean {
+            position: absolute;
+            left: 330px;
+            top: 45px;
+            font-size: 24px;
+            li {
+                width: 750px;
+                margin-bottom: 10px;
+                font-size: 18px;
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background: #A51C30;
+                    position: absolute;
+                    top: 7px;
+                    left: -20px;
+                }
+            }
+        }
+        .wenhua_bottom {
+            ul {
+                margin-left: 30px;
+                margin-top: 25px;
+                float: left;
+                li {
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+            }
+            img {
+                margin: 20px 0 0 80px;
+            }
+        }
+        p {
+            margin-bottom: 10px;
+            line-height: 36px;
+            text-align: justify;
+            width: 1100px;
+            display: block;
+            font-size: 20px;
+            color: #666666;
+            text-indent: 2em;
+        }
+    }
+    .zhichi {
+        width: 1100px;
+        margin: 0 auto;
+        h3 {
+            font-family: "PingFang SC";
+            font-size: 36px;
+            font-weight: 800;
+            color: #A51C30;
+            padding: 80px 0 20px 0;
+        }
+        p {
+            margin-bottom: 10px;
+            line-height: 36px;
+            text-align: justify;
+            width: 1100px;
+            display: block;
+            font-size: 20px;
+            color: #666666;
+            text-indent: 2em;
+        }
+        .qianming {
+            margin-top: -25px;
+            width: 300px;
+            float: right;
+            span {
+                font-size: 20px;
+                color: #666666;
+            }
+            img {
+                margin-left: 10px;
+            }
+        }
+    }
+    .news {
+        width: 100%;
+        height: 770px;
+        background: #f8f8f8;
+        margin-top: 100px;
+        .news_box {
+            width: 1160px;
+            background: #f8f8f8;
+            margin: 0 auto;
+            h3 {
+                font-family: "PingFang SC";
+                font-size: 36px;
+                font-weight: 800;
+                color: #A51C30;
+                padding: 70px 0 40px 0;
+                text-align: center;
+            }
+            .news_img {
+                float: left;
+            }
+            .news_right {
+                width: 710px;
+                float: right;
+                .lines {
+                    img {
+                        float: left;
+                        display: inline-block;
+                    }
+                    h5 {
+                        float: left;
+                        font-family: "PingFang SC";
+                        font-size: 24px;
+                        font-weight: 500;
+                        display: inline-block;
+                        margin-left: 10px;
+                        color: #A51C30;
+                    }
+                    p {
+                        float: left;
+                        font-size: 18px;
+                        font-weight: 300;
+                        display: inline-block;
+                        margin-top: 7px;
+                        margin-left: 8px;
+                    }
+                }
+                p {
+                    font-size: 20px;
+                    font-weight: 500;
+                    display: inline-block;
+                    margin-top: 10px;
+                    text-indent: 2em;
+                    line-height: 32px;
+                    text-align: justify;
+                }
+            }
+            .news_bottom {
+                position: relative;
+                img {
+                    margin-top: 20px;
+                }
+                h4 {
+                    font-size: 26px;
+                    font-weight: 400;
+                    position: absolute;
+                    top: 20px;
+                    left: 15px;
+                }
+                p {
+                    margin-top: 20px;
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 38px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+    .colume {
+        padding-top: 55px;
+        position: relative;
+        width: 1160px;
+        height: 420px;
+        margin: 0 auto;
+        .ml {
+            position: absolute;
+            top: 54px;
+            left: 25px;
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: 5px;
+        }
+        .show {
+            h3 {
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 8px;
+                margin-top: 8px;
+            }
+            p {
+                font-size: 20px;
+                font-weight: 300;
+                margin-bottom: 8px;
+            }
+            .hide {
+                height: 0;
+                overflow: hidden;
+                transition: all .3s;
+            }
+        }
+        .click_on {
+            margin-top: 30px;
+            float: right;
+            width: 200px;
+            height: 50px;
+            background: #A51C30;
+            border-radius: 5px;
+            p {
+                text-align: center;
+                color: white;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 50px;
+            }
+        }
+    }
+    .tuijian {
+        padding-top: 55px;
+        position: relative;
+        width: 1160px;
+        height: 420px;
+        margin: 0 auto;
+        .tjy {
+            position: absolute;
+            top: 54px;
+            left: 20px;
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+        .show {
+            p {
+                float: left;
+                font-size: 20px;
+                font-weight: 400;
+                margin-bottom: 8px;
+                margin-top: 10px;
+                text-align: justify;
+            }
+            span {
+                float: right;
+                font-size: 22px;
+                font-weight: 300;
+                margin-bottom: 18px;
+                margin-top: 10px;
+            }
+            .hide {
+                height: 0;
+                overflow: hidden;
+                transition: all .3s;
+            }
+        }
+        .click_on {
+            margin-top: 40px;
+            float: right;
+            width: 200px;
+            height: 50px;
+            background: #A51C30;
+            border-radius: 5px;
+            p {
+                text-align: center;
+                color: white;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 50px;
+            }
+        }
+    }
+    .hf_road {
+        padding-top: 55px;
+        width: 1160px;
+        margin: 0 auto;
+        .road_book {
+            span {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                transform-origin: center center;
+                transform: rotate(45deg);
+                background: #A51C30;
+                float: left;
+                margin-top: 22px;
+                margin-right: 10px;
+            }
+            h3 {
+                margin-left: 10px;
+                font-size: 30px;
+                font-weight: 500;
+                margin-bottom: 8px;
+                margin-top: 8px;
+                float: left;
+            }
+            p {
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 70px;
+                float: left;
+                margin-left: -10px;
+            }
+        }
+        .road_main {
+            img {
+                float: left;
+            }
+            .road_right {
+                float: right;
+                width: 940px;
+                p {
+                    font-size: 18px;
+                    font-weight: 300;
+                    margin-bottom: 8px;
+                    text-indent: 2em;
+                    line-height: 30px;
+                }
+            }
+            .hide {
+                height: 0;
+                overflow: hidden;
+                transition: all .3s;
+                p {
+                    line-height: 30px;
+                    font-size: 18px;
+                    font-weight: 300;
+                    margin-bottom: 8px;
+                    text-indent: 2em;
+                }
+            }
+            .click_on {
+                float: right;
+                margin-top: 40px;
+                float: right;
+                width: 200px;
+                height: 50px;
+                background: #A51C30;
+                border-radius: 5px;
+                p {
+                    text-align: center;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+    .hf_dream {
+        padding-top: 55px;
+        width: 1160px;
+        margin: 0 auto;
+        .road_book {
+            span {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                transform-origin: center center;
+                transform: rotate(45deg);
+                background: #A51C30;
+                float: left;
+                margin-top: 22px;
+                margin-right: 10px;
+            }
+            h3 {
+                margin-left: 10px;
+                font-size: 30px;
+                font-weight: 500;
+                margin-bottom: 8px;
+                margin-top: 8px;
+                float: left;
+            }
+            p {
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 70px;
+                float: left;
+                margin-left: -10px;
+            }
+        }
+        .road_main {
+            img {
+                margin-top: 6px;
+                float: left;
+            }
+            .road_right {
+                float: right;
+                width: 940px;
+                p {
+                    font-size: 18px;
+                    font-weight: 300;
+                    margin-bottom: 8px;
+                    text-indent: 2em;
+                    line-height: 30px;
+                }
+            }
+            .hide {
+                height: 0;
+                overflow: hidden;
+                transition: all .3s;
+                p {
+                    line-height: 30px;
+                    font-size: 18px;
+                    font-weight: 300;
+                    margin-bottom: 8px;
+                    text-indent: 2em;
+                }
+            }
+            .click_on {
+                float: right;
+                margin-top: 40px;
+                float: right;
+                width: 200px;
+                height: 50px;
+                background: #A51C30;
+                border-radius: 5px;
+                p {
+                    text-align: center;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+    .new_book {
+        padding-bottom: 100px;
+        padding-top: 55px;
+        width: 1160px;
+        margin: 0 auto;
+        .road_book {
+            span {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                transform-origin: center center;
+                transform: rotate(45deg);
+                background: #A51C30;
+                float: left;
+                margin-top: 22px;
+                margin-right: 10px;
+            }
+            h3 {
+                margin-left: 10px;
+                font-size: 30px;
+                font-weight: 500;
+                margin-bottom: 8px;
+                margin-top: 8px;
+                float: left;
+            }
+            p {
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 70px;
+                float: left;
+                margin-left: -10px;
+            }
+        }
+        .road_main {
+            p {
+                font-size: 18px;
+                font-weight: 300;
+                margin-bottom: 8px;
+                text-indent: 2em;
+                line-height: 30px;
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .footer {
+        width: 100%;
+        height: 225px;
+        background: #A51C30;
+        .footer_box {
+            width: 1200px;
+            height: auto;
+            margin: 0 auto;
+            padding-top: 50px;
+            .footer_logo {
+                float: left;
+            }
+            .footer_tel {
+                margin-top: 30px;
+                float: right;
+            }
+        }
+    }
+    .footer_bottom {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        p {
+            font-size: 24px;
+            text-align: center;
+            color: #1d1d1d;
+            font-weight: 500;
+            line-height: 100px;
+            margin-right: 100px;
+        }
+        img {
+            position: absolute;
+            top: 38px;
+            left: 55%;
+        }
+    }
+}

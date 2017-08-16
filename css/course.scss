@@ -1,0 +1,729 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: .14rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "宋体";
+    text-size-adjust: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img,
+div,
+body,
+html,
+ul,
+li,
+a {
+    -webkit-touch-callout: none;
+}
+
+input,
+button {
+    outline: 0;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #666;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+}
+
+.course_smallbox {
+    display: none;
+}
+
+.course_bigbox {
+    width: 100%;
+    height: auto;
+    .bar_one {
+        width: 100%;
+        height: 50px;
+        background: #f8f8f8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -3;
+    }
+    .bar_two {
+        width: 100%;
+        height: 65px;
+        background: #A51C30;
+        position: absolute;
+        top: 170px;
+        left: 0;
+        z-index: -5;
+    }
+    .wapper {
+        width: 62.5%;
+        height: auto;
+        margin: auto;
+        .header_top {
+            background: #f8f8f8;
+            width: 100%;
+            height: 50px;
+            margin: auto;
+            .top_center {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 50px;
+                margin: auto;
+                p {
+                    font-size: 16px;
+                    line-height: 50px;
+                    color: #a51c30;
+                }
+            }
+        }
+        header {
+            width: 100%;
+            height: 120px;
+            display: flex;
+            a:nth-child(1) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .left {
+                    width: 98px;
+                    height: auto;
+                }
+            }
+            a:nth-child(2) {
+                flex: 1;
+            }
+            a:nth-child(3) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .right {
+                    width: 265px;
+                    height: auto;
+                    margin-top: 30px;
+                }
+            }
+        }
+        nav {
+            width: 100%;
+            height: 65px;
+            background: #A51C30;
+            display: flex;
+            .list {
+                width: 100%;
+                height: 65px;
+                margin: 0 auto;
+                display: flex;
+                li {
+                    line-height: 65px;
+                    display: flex;
+                    float: left;
+                    width: 18%;
+                    justify-content: center;
+                    align-items: center;
+                    &:nth-child(2n+1) {
+                        width: 2%;
+                    }
+                    &:first-child {
+                        width: .5%;
+                    }
+                    &:last-child {
+                        width: .5%;
+                    }
+                    &:nth-child(8) {
+                        width: 23%;
+                    }
+                    a {
+                        display: inline-block;
+                        color: white;
+                        display: flex;
+                        flex: 1;
+                        p {
+                            margin: auto;
+                            font-size: 20px;
+                        }
+                    }
+                    img {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .banner {
+        width: 100%;
+        height: auto;
+    }
+    .map {
+        width: 100%;
+        height: 900px;
+        background: #fbfbfb;
+        img {
+            padding-top: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .new_ad {
+        width: 1200px;
+        height: 700px;
+        display: block;
+        margin: 0 auto;
+        img {
+            padding-top: 70px;
+            display: block;
+            margin: 0 auto;
+        }
+        .newad_box {
+            width: 1200px;
+            height: auto;
+            .left {
+                float: left;
+                position: relative;
+                h1 {
+                    position: absolute;
+                    top: 115px;
+                    left: 140px;
+                    font-size: 36px;
+                    font-weight: 800;
+                    color: white;
+                }
+                .ad_text {
+                    position: absolute;
+                    top: 230px;
+                    left: 40px;
+                    p {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 36px;
+                        color: white;
+                    }
+                }
+            }
+            .right {
+                float: right;
+                position: relative;
+                h1 {
+                    position: absolute;
+                    top: 115px;
+                    left: 140px;
+                    font-size: 36px;
+                    font-weight: 800;
+                    color: #a51c30;
+                }
+                span {
+                    position: absolute;
+                    top: 132px;
+                    left: 380px;
+                    font-size: 20px;
+                    font-weight: 800;
+                    color: #a51c30;
+                }
+                .ad_text {
+                    position: absolute;
+                    top: 230px;
+                    left: 40px;
+                    p {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 36px;
+                        color: #a51c30;
+                    }
+                }
+            }
+        }
+    }
+    .five_small {
+        width: 100%;
+        height: 470px;
+        background: #fbfbfb;
+        h3 {
+            font-family: "PingFang SC";
+            font-size: 36px;
+            font-weight: 800;
+            padding: 90px 0 10px 0;
+            color: #A51C30;
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            color: #A51C30;
+            text-align: center;
+        }
+        .five_center {
+            width: 1100px;
+            margin-top: 100px;
+            margin: 0 auto;
+            display: flex;
+            li {
+                margin-top: 60px;
+                float: left;
+                flex: 1;
+                img {
+                    display: block;
+                    text-align: center;
+                    padding-left: 72px;
+                    padding-bottom: 10px;
+                }
+                span {
+                    font-family: "PingFang SC";
+                    font-size: 20px;
+                    font-weight: 400;
+                    padding-left: 69px;
+                    color: #A51C30;
+                }
+            }
+        }
+    }
+    .five_reason {
+        width: 100%;
+        margin: 0 auto;
+      
+        .one_reason {
+            width: 100%;
+            width: 1200px;
+            margin: 0 auto;
+            h1 {
+                font-family: "PingFang SC";
+                font-size: 30px;
+                font-weight: 500;
+                padding: 120px 0 60px 0;
+                color: #A51C30;
+            }
+            .one {
+                img {
+                    float: left;
+                    padding-bottom: 120px;
+                }
+                .one_right {
+                    float: right;
+                    width: 680px;
+                    h3 {
+                        font-family: "PingFang SC";
+                        font-size: 30px;
+                        font-weight: 800;
+                        padding: 0 0 20px 0;
+                        color: #A51C30;
+                    }
+                    p {
+                        width: 680px;
+                        display: block;
+                        text-align: justify;
+                        font-size: 20px;
+                        font-weight: 300;
+                        line-height: 46px;
+                        margin-bottom: 80px;
+                    }
+                    span {
+                        width: 175px;
+                        height: 45px;
+                        background: #A51C30;
+                        display: block;
+                        border-radius: 5px;
+                        img {
+                            float: left;
+                            display: inline-block;
+                            margin-left: 30px;
+                            margin-right: 10px;
+                            margin-top: 4px;
+                        }
+                        p {
+                            display: inline-block;
+                            width: 80px;
+                            float: left;
+                            font-size: 18px;
+                            font-weight: 300;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+       .box_two{
+           width: 100%;
+           background: #fbfbfb;
+           .two_reason {
+            width: 100%;
+            width: 1200px;
+            margin: 0 auto;
+            h1 {
+                font-family: "PingFang SC";
+                font-size: 30px;
+                font-weight: 500;
+                padding: 35px 0 60px 0;
+                color: #A51C30;
+            }
+            .two {
+                img {
+                    float: left;
+                    padding-bottom: 70px;
+                }
+                .one_right {
+                    float: right;
+                    width: 680px;
+                    h3 {
+                        font-family: "PingFang SC";
+                        font-size: 30px;
+                        font-weight: 800;
+                        padding: 0 0 20px 0;
+                        color: #A51C30;
+                    }
+                    p {
+                        width: 680px;
+                        display: block;
+                        text-align: justify;
+                        font-size: 20px;
+                        font-weight: 300;
+                        line-height: 46px;
+                        margin-bottom: 80px;
+                    }
+                    span {
+                        width: 175px;
+                        height: 45px;
+                        background: #A51C30;
+                        display: block;
+                        border-radius: 5px;
+                        img {
+                            float: left;
+                            display: inline-block;
+                            margin-left: 30px;
+                            margin-right: 10px;
+                            margin-top: 4px;
+                        }
+                        p {
+                            display: inline-block;
+                            width: 80px;
+                            float: left;
+                            font-size: 18px;
+                            font-weight: 300;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+       } 
+        
+        
+        
+        
+        .three_reason {
+            width: 100%;
+            width: 1200px;
+            margin: 0 auto;
+            h1 {
+               
+                font-size: 30px;
+                font-weight: 500;
+                padding: 120px 0 60px 0;
+                color: #A51C30;
+            }
+            .three {
+                img {
+                    float: left;
+                    padding-bottom: 120px;
+                }
+                .one_right {
+                    float: right;
+                    width: 680px;
+                    h3 {
+                        font-family: "PingFang SC";
+                        font-size: 30px;
+                        font-weight: 800;
+                        padding: 0 0 20px 0;
+                        color: #A51C30;
+                    }
+                    p {
+                        width: 680px;
+                        display: block;
+                        text-align: justify;
+                        font-size: 20px;
+                        font-weight: 300;
+                        line-height: 46px;
+                        margin-bottom: 80px;
+                    }
+                    span {
+                        width: 175px;
+                        height: 45px;
+                        background: #A51C30;
+                        display: block;
+                        border-radius: 5px;
+                        img {
+                            float: left;
+                            display: inline-block;
+                            margin-left: 30px;
+                            margin-right: 10px;
+                            margin-top: 9px;
+                        }
+                        p {
+                            display: inline-block;
+                            width: 80px;
+                            float: left;
+                            font-size: 18px;
+                            font-weight: 300;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .box_four{
+            width: 100%;
+            background: #fbfbfb;
+            .four_reason {
+            width: 100%;
+            width: 1200px;
+            margin: 0 auto;
+            h1 {               
+                font-size: 30px;
+                font-weight: 500;
+                padding: 35px 0 60px 0;
+                color: #A51C30;
+            }
+            .four {
+                img {
+                    float: left;
+                    padding-bottom: 70px;
+                }
+                .one_right {
+                    float: right;
+                    width: 680px;
+                    h3 {
+                        font-family: "PingFang SC";
+                        font-size: 30px;
+                        font-weight: 800;
+                        padding: 0 0 20px 0;
+                        color: #A51C30;
+                    }
+                    p {
+                        width: 680px;
+                        display: block;
+                        text-align: justify;
+                        font-size: 20px;
+                        font-weight: 300;
+                        line-height: 46px;
+                        margin-bottom: 40px;
+                    }
+                    span {
+                        width: 175px;
+                        height: 45px;
+                        background: #A51C30;
+                        display: block;
+                        border-radius: 5px;
+                        img {
+                            float: left;
+                            display: inline-block;
+                            margin-left: 30px;
+                            margin-right: 10px;
+                            margin-top: 9px;
+                        }
+                        p {
+                            display: inline-block;
+                            width: 80px;
+                            float: left;
+                            font-size: 18px;
+                            font-weight: 300;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        
+        }
+        
+        .five_reason {
+            width: 100%;
+            width: 1200px;
+            margin: 0 auto;
+            h1 {
+               
+                font-size: 30px;
+                font-weight: 500;
+                padding: 120px 0 60px 0;
+                color: #A51C30;
+            }
+            .five {
+                img {
+                    float: left;
+                    padding-bottom: 120px;
+                }
+                .one_right {
+                    float: right;
+                    width: 680px;
+                    h3 {
+                        font-family: "PingFang SC";
+                        font-size: 30px;
+                        font-weight: 800;
+                        padding: 0 0 20px 0;
+                        color: #A51C30;
+                    }
+                    p {
+                        width: 680px;
+                        display: block;
+                        text-align: justify;
+                        font-size: 20px;
+                        font-weight: 300;
+                        line-height: 46px;
+                        margin-bottom: 130px;
+                    }
+                    span {
+                        width: 175px;
+                        height: 45px;
+                        background: #A51C30;
+                        display: block;
+                        border-radius: 5px;
+                        img {
+                            float: left;
+                            display: inline-block;
+                            margin-left: 30px;
+                            margin-right: 10px;
+                            margin-top: 9px;
+                        }
+                        p {
+                            display: inline-block;
+                            width: 80px;
+                            float: left;
+                            font-size: 18px;
+                            font-weight: 300;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }               
+    }
+    
+    .curriculum{
+         width: 100%;
+         height: 400px;
+         background: #fbfbfb;
+          h3 {
+            font-family: "PingFang SC";
+            font-size: 36px;
+            font-weight: 800;
+            padding: 110px 0 1px 0;
+            color: #A51C30;
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            color: #A51C30;
+            text-align: center;
+             font-weight: 300;
+           margin-bottom: 30px; 
+        }
+        h5{
+             font-family: "PingFang SC";
+            font-size: 18px;
+            font-weight: 500;
+           margin-bottom: 15px;       
+            text-align: center;
+             font-weight: 300;
+            
+        }
+    }
+    
+    .section{
+         width: 100%;
+         height: 1100px;
+         h3 {
+            font-family: "PingFang SC";
+            font-size: 30px;
+            font-weight: 500;
+            padding: 90px 0 40px 0;
+            color: #A51C30;
+            text-align: center;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+     .section_one{
+         width: 100%;
+        
+         h3 {
+            font-family: "PingFang SC";
+            font-size: 30px;
+            font-weight: 500;
+            padding: 10px 0 40px 0;
+            color: #A51C30;
+            text-align: center;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            
+        }
+    }
+    
+    .title_one{
+        width: 100%;
+        img{
+            display: block;
+            margin: 125px auto;
+        }
+    }
+    
+   
+    .footer {
+        width: 100%;
+        height: 225px;
+        background: #A51C30;
+        .footer_box {
+            width: 1200px;
+            height: auto;
+            margin: 0 auto;
+            padding-top: 50px;
+            .footer_logo {
+                float: left;
+            }
+            .footer_tel {
+                margin-top: 30px;
+                float: right;
+            }
+        }
+    }
+    .footer_bottom {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        p {
+            font-size: 24px;
+            text-align: center;
+            color: #1d1d1d;
+            font-weight: 500;
+            line-height: 100px;
+            margin-right: 100px;
+        }
+        img {
+            position: absolute;
+            top: 38px;
+            left: 55%;
+        }
+    }
+}

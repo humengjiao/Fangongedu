@@ -1,0 +1,221 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: .14rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "宋体";
+  text-size-adjust: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img,
+div,
+body,
+html,
+ul,
+li,
+a {
+  -webkit-touch-callout: none;
+}
+
+input,
+button {
+  outline: 0;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #666;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+}
+
+.map_bigbox {
+  display: none;
+}
+
+.map_smallbox {
+  width: 100%;
+}
+
+.map_smallbox header .logo {
+  float: left;
+  width: 2.5rem;
+  height: auto;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.map_smallbox header .click {
+  width: 1.25rem;
+  float: right;
+  margin-top: 1.75rem;
+  margin-right: 0.5rem;
+}
+
+.map_smallbox nav {
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  transition: all .5s;
+}
+
+.map_smallbox nav .hide {
+  height: 10rem;
+  margin: 0.05rem 0.5rem 0 0.5rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.map_smallbox nav ul li {
+  width: 100%;
+  height: 2rem;
+  border-bottom: 0.05rem solid #eee;
+}
+
+.map_smallbox nav ul li:last-child {
+  border-bottom: none;
+}
+
+.map_smallbox nav ul li a {
+  height: 2rem;
+  display: block;
+  border-radius: 0.25rem;
+  color: #A51C30;
+  line-height: 2rem;
+  text-indent: 2em;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.map_smallbox nav ul li.cur a {
+  background: #A51C30;
+  color: white;
+}
+
+.map_smallbox nav ul li a:hover {
+  background: #eee;
+}
+
+.map_smallbox .banner {
+  width: 100%;
+}
+
+.map_smallbox .map {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.map_smallbox .map img {
+  padding-top: 30px;
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.map_smallbox .map p {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.map_smallbox .map .hello_box {
+  width: 255px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.map_smallbox .map .hello_box span {
+  float: left;
+  margin: 0 auto;
+  display: block;
+  width: 100px;
+  height: 35px;
+  background: #A51C30;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 5px;
+}
+
+.map_smallbox .map .hello_box span:nth-child(2) {
+  float: right;
+}
+
+.map_smallbox .map .hello_box p {
+  float: left;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 34px;
+  margin: 0 20px;
+}
+
+.map_smallbox .email {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 24px;
+}
+
+.map_smallbox .email_two {
+  text-align: center;
+  font-size: 16px;
+  color: #A51C30;
+}
+
+.map_smallbox .xiaoqu img {
+  width: 280px;
+  display: block;
+  margin: 20px auto 30px auto;
+}
+
+.map_smallbox .map_bottom {
+  width: 100%;
+  height: auto;
+}
+
+.map_smallbox .footer {
+  margin-top: -10px;
+  width: 100%;
+  height: 6.5rem;
+  background: #A51C30;
+}
+
+.map_smallbox .footer .footer_logo {
+  padding-top: 1rem;
+}
+
+.map_smallbox .footer .footer_logo img {
+  display: block;
+  width: 15rem;
+  margin: 0 auto;
+}
+
+.map_smallbox .footer_bottom {
+  width: 100%;
+  height: 2.5rem;
+  padding-top: 1rem;
+}
+
+.map_smallbox .footer_bottom img {
+  width: 11.5rem;
+  display: block;
+  margin: 0 auto;
+}

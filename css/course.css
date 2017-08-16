@@ -1,0 +1,810 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: .14rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "宋体";
+  text-size-adjust: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img,
+div,
+body,
+html,
+ul,
+li,
+a {
+  -webkit-touch-callout: none;
+}
+
+input,
+button {
+  outline: 0;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #666;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+}
+
+.course_smallbox {
+  display: none;
+}
+
+.course_bigbox {
+  width: 100%;
+  height: auto;
+}
+
+.course_bigbox .bar_one {
+  width: 100%;
+  height: 50px;
+  background: #f8f8f8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+
+.course_bigbox .bar_two {
+  width: 100%;
+  height: 65px;
+  background: #A51C30;
+  position: absolute;
+  top: 170px;
+  left: 0;
+  z-index: -5;
+}
+
+.course_bigbox .wapper {
+  width: 62.5%;
+  height: auto;
+  margin: auto;
+}
+
+.course_bigbox .wapper .header_top {
+  background: #f8f8f8;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+}
+
+.course_bigbox .wapper .header_top .top_center {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+}
+
+.course_bigbox .wapper .header_top .top_center p {
+  font-size: 16px;
+  line-height: 50px;
+  color: #a51c30;
+}
+
+.course_bigbox .wapper header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+}
+
+.course_bigbox .wapper header a:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.course_bigbox .wapper header a:nth-child(1) .left {
+  width: 98px;
+  height: auto;
+}
+
+.course_bigbox .wapper header a:nth-child(2) {
+  flex: 1;
+}
+
+.course_bigbox .wapper header a:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.course_bigbox .wapper header a:nth-child(3) .right {
+  width: 265px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.course_bigbox .wapper nav {
+  width: 100%;
+  height: 65px;
+  background: #A51C30;
+  display: flex;
+}
+
+.course_bigbox .wapper nav .list {
+  width: 100%;
+  height: 65px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.course_bigbox .wapper nav .list li {
+  line-height: 65px;
+  display: flex;
+  float: left;
+  width: 18%;
+  justify-content: center;
+  align-items: center;
+}
+
+.course_bigbox .wapper nav .list li:nth-child(2n+1) {
+  width: 2%;
+}
+
+.course_bigbox .wapper nav .list li:first-child {
+  width: .5%;
+}
+
+.course_bigbox .wapper nav .list li:last-child {
+  width: .5%;
+}
+
+.course_bigbox .wapper nav .list li:nth-child(8) {
+  width: 23%;
+}
+
+.course_bigbox .wapper nav .list li a {
+  display: inline-block;
+  color: white;
+  display: flex;
+  flex: 1;
+}
+
+.course_bigbox .wapper nav .list li a p {
+  margin: auto;
+  font-size: 20px;
+}
+
+.course_bigbox .wapper nav .list li img {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+.course_bigbox .banner {
+  width: 100%;
+  height: auto;
+}
+
+.course_bigbox .map {
+  width: 100%;
+  height: 900px;
+  background: #fbfbfb;
+}
+
+.course_bigbox .map img {
+  padding-top: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.course_bigbox .new_ad {
+  width: 1200px;
+  height: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+.course_bigbox .new_ad img {
+  padding-top: 70px;
+  display: block;
+  margin: 0 auto;
+}
+
+.course_bigbox .new_ad .newad_box {
+  width: 1200px;
+  height: auto;
+}
+
+.course_bigbox .new_ad .newad_box .left {
+  float: left;
+  position: relative;
+}
+
+.course_bigbox .new_ad .newad_box .left h1 {
+  position: absolute;
+  top: 115px;
+  left: 140px;
+  font-size: 36px;
+  font-weight: 800;
+  color: white;
+}
+
+.course_bigbox .new_ad .newad_box .left .ad_text {
+  position: absolute;
+  top: 230px;
+  left: 40px;
+}
+
+.course_bigbox .new_ad .newad_box .left .ad_text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  color: white;
+}
+
+.course_bigbox .new_ad .newad_box .right {
+  float: right;
+  position: relative;
+}
+
+.course_bigbox .new_ad .newad_box .right h1 {
+  position: absolute;
+  top: 115px;
+  left: 140px;
+  font-size: 36px;
+  font-weight: 800;
+  color: #a51c30;
+}
+
+.course_bigbox .new_ad .newad_box .right span {
+  position: absolute;
+  top: 132px;
+  left: 380px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #a51c30;
+}
+
+.course_bigbox .new_ad .newad_box .right .ad_text {
+  position: absolute;
+  top: 230px;
+  left: 40px;
+}
+
+.course_bigbox .new_ad .newad_box .right .ad_text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #a51c30;
+}
+
+.course_bigbox .five_small {
+  width: 100%;
+  height: 470px;
+  background: #fbfbfb;
+}
+
+.course_bigbox .five_small h3 {
+  font-family: "PingFang SC";
+  font-size: 36px;
+  font-weight: 800;
+  padding: 90px 0 10px 0;
+  color: #A51C30;
+  text-align: center;
+}
+
+.course_bigbox .five_small p {
+  font-size: 20px;
+  color: #A51C30;
+  text-align: center;
+}
+
+.course_bigbox .five_small .five_center {
+  width: 1100px;
+  margin-top: 100px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.course_bigbox .five_small .five_center li {
+  margin-top: 60px;
+  float: left;
+  flex: 1;
+}
+
+.course_bigbox .five_small .five_center li img {
+  display: block;
+  text-align: center;
+  padding-left: 72px;
+  padding-bottom: 10px;
+}
+
+.course_bigbox .five_small .five_center li span {
+  font-family: "PingFang SC";
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 69px;
+  color: #A51C30;
+}
+
+.course_bigbox .five_reason {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.course_bigbox .five_reason .one_reason {
+  width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.course_bigbox .five_reason .one_reason h1 {
+  font-family: "PingFang SC";
+  font-size: 30px;
+  font-weight: 500;
+  padding: 120px 0 60px 0;
+  color: #A51C30;
+}
+
+.course_bigbox .five_reason .one_reason .one img {
+  float: left;
+  padding-bottom: 120px;
+}
+
+.course_bigbox .five_reason .one_reason .one .one_right {
+  float: right;
+  width: 680px;
+}
+
+.course_bigbox .five_reason .one_reason .one .one_right h3 {
+  font-family: "PingFang SC";
+  font-size: 30px;
+  font-weight: 800;
+  padding: 0 0 20px 0;
+  color: #A51C30;
+}
+
+.course_bigbox .five_reason .one_reason .one .one_right p {
+  width: 680px;
+  display: block;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 46px;
+  margin-bottom: 80px;
+}
+
+.course_bigbox .five_reason .one_reason .one .one_right span {
+  width: 175px;
+  height: 45px;
+  background: #A51C30;
+  display: block;
+  border-radius: 5px;
+}
+
+.course_bigbox .five_reason .one_reason .one .one_right span img {
+  float: left;
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.course_bigbox .five_reason .one_reason .one .one_right span p {
+  display: inline-block;
+  width: 80px;
+  float: left;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+}
+
+.course_bigbox .five_reason .box_two {
+  width: 100%;
+  background: #fbfbfb;
+}
+
+.course_bigbox .five_reason .box_two .two_reason {
+  width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.course_bigbox .five_reason .box_two .two_reason h1 {
+  font-family: "PingFang SC";
+  font-size: 30px;
+  font-weight: 500;
+  padding: 35px 0 60px 0;
+  color: #A51C30;
+}
+
+.course_bigbox .five_reason .box_two .two_reason .two img {
+  float: left;
+  padding-bottom: 70px;
+}
+
+.course_bigbox .five_reason .box_two .two_reason .two .one_right {
+  float: right;
+  width: 680px;
+}
+
+.course_bigbox .five_reason .box_two .two_reason .two .one_right h3 {
+  font-family: "PingFang SC";
+  font-size: 30px;
+  font-weight: 800;
+  padding: 0 0 20px 0;
+  color: #A51C30;
+}
+
+.course_bigbox .five_reason .box_two .two_reason .two .one_right p {
+  width: 680px;
+  display: block;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 46px;
+  margin-bottom: 80px;
+}
+
+.course_bigbox .five_reason .box_two .two_reason .two .one_right span {
+  width: 175px;
+  height: 45px;
+  background: #A51C30;
+  display: block;
+  border-radius: 5px;
+}
+
+.course_bigbox .five_reason .box_two .two_reason .two .one_right span img {
+  float: left;
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.course_bigbox .five_reason .box_two .two_reason .two .one_right span p {
+  display: inline-block;
+  width: 80px;
+  float: left;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+}
+
+.course_bigbox .five_reason .three_reason {
+  width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.course_bigbox .five_reason .three_reason h1 {
+  font-size: 30px;
+  font-weight: 500;
+  padding: 120px 0 60px 0;
+  color: #A51C30;
+}
+
+.course_bigbox .five_reason .three_reason .three img {
+  float: left;
+  padding-bottom: 120px;
+}
+
+.course_bigbox .five_reason .three_reason .three .one_right {
+  float: right;
+  width: 680px;
+}
+
+.course_bigbox .five_reason .three_reason .three .one_right h3 {
+  font-family: "PingFang SC";
+  font-size: 30px;
+  font-weight: 800;
+  padding: 0 0 20px 0;
+  color: #A51C30;
+}
+
+.course_bigbox .five_reason .three_reason .three .one_right p {
+  width: 680px;
+  display: block;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 46px;
+  margin-bottom: 80px;
+}
+
+.course_bigbox .five_reason .three_reason .three .one_right span {
+  width: 175px;
+  height: 45px;
+  background: #A51C30;
+  display: block;
+  border-radius: 5px;
+}
+
+.course_bigbox .five_reason .three_reason .three .one_right span img {
+  float: left;
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top: 9px;
+}
+
+.course_bigbox .five_reason .three_reason .three .one_right span p {
+  display: inline-block;
+  width: 80px;
+  float: left;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+}
+
+.course_bigbox .five_reason .box_four {
+  width: 100%;
+  background: #fbfbfb;
+}
+
+.course_bigbox .five_reason .box_four .four_reason {
+  width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.course_bigbox .five_reason .box_four .four_reason h1 {
+  font-size: 30px;
+  font-weight: 500;
+  padding: 35px 0 60px 0;
+  color: #A51C30;
+}
+
+.course_bigbox .five_reason .box_four .four_reason .four img {
+  float: left;
+  padding-bottom: 70px;
+}
+
+.course_bigbox .five_reason .box_four .four_reason .four .one_right {
+  float: right;
+  width: 680px;
+}
+
+.course_bigbox .five_reason .box_four .four_reason .four .one_right h3 {
+  font-family: "PingFang SC";
+  font-size: 30px;
+  font-weight: 800;
+  padding: 0 0 20px 0;
+  color: #A51C30;
+}
+
+.course_bigbox .five_reason .box_four .four_reason .four .one_right p {
+  width: 680px;
+  display: block;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 46px;
+  margin-bottom: 40px;
+}
+
+.course_bigbox .five_reason .box_four .four_reason .four .one_right span {
+  width: 175px;
+  height: 45px;
+  background: #A51C30;
+  display: block;
+  border-radius: 5px;
+}
+
+.course_bigbox .five_reason .box_four .four_reason .four .one_right span img {
+  float: left;
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top: 9px;
+}
+
+.course_bigbox .five_reason .box_four .four_reason .four .one_right span p {
+  display: inline-block;
+  width: 80px;
+  float: left;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+}
+
+.course_bigbox .five_reason .five_reason {
+  width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.course_bigbox .five_reason .five_reason h1 {
+  font-size: 30px;
+  font-weight: 500;
+  padding: 120px 0 60px 0;
+  color: #A51C30;
+}
+
+.course_bigbox .five_reason .five_reason .five img {
+  float: left;
+  padding-bottom: 120px;
+}
+
+.course_bigbox .five_reason .five_reason .five .one_right {
+  float: right;
+  width: 680px;
+}
+
+.course_bigbox .five_reason .five_reason .five .one_right h3 {
+  font-family: "PingFang SC";
+  font-size: 30px;
+  font-weight: 800;
+  padding: 0 0 20px 0;
+  color: #A51C30;
+}
+
+.course_bigbox .five_reason .five_reason .five .one_right p {
+  width: 680px;
+  display: block;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 46px;
+  margin-bottom: 130px;
+}
+
+.course_bigbox .five_reason .five_reason .five .one_right span {
+  width: 175px;
+  height: 45px;
+  background: #A51C30;
+  display: block;
+  border-radius: 5px;
+}
+
+.course_bigbox .five_reason .five_reason .five .one_right span img {
+  float: left;
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top: 9px;
+}
+
+.course_bigbox .five_reason .five_reason .five .one_right span p {
+  display: inline-block;
+  width: 80px;
+  float: left;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+}
+
+.course_bigbox .curriculum {
+  width: 100%;
+  height: 400px;
+  background: #fbfbfb;
+}
+
+.course_bigbox .curriculum h3 {
+  font-family: "PingFang SC";
+  font-size: 36px;
+  font-weight: 800;
+  padding: 110px 0 1px 0;
+  color: #A51C30;
+  text-align: center;
+}
+
+.course_bigbox .curriculum p {
+  font-size: 20px;
+  color: #A51C30;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.course_bigbox .curriculum h5 {
+  font-family: "PingFang SC";
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.course_bigbox .section {
+  width: 100%;
+  height: 1100px;
+}
+
+.course_bigbox .section h3 {
+  font-family: "PingFang SC";
+  font-size: 30px;
+  font-weight: 500;
+  padding: 90px 0 40px 0;
+  color: #A51C30;
+  text-align: center;
+}
+
+.course_bigbox .section img {
+  display: block;
+  margin: 0 auto;
+}
+
+.course_bigbox .section_one {
+  width: 100%;
+}
+
+.course_bigbox .section_one h3 {
+  font-family: "PingFang SC";
+  font-size: 30px;
+  font-weight: 500;
+  padding: 10px 0 40px 0;
+  color: #A51C30;
+  text-align: center;
+}
+
+.course_bigbox .section_one img {
+  display: block;
+  margin: 0 auto;
+}
+
+.course_bigbox .title_one {
+  width: 100%;
+}
+
+.course_bigbox .title_one img {
+  display: block;
+  margin: 125px auto;
+}
+
+.course_bigbox .footer {
+  width: 100%;
+  height: 225px;
+  background: #A51C30;
+}
+
+.course_bigbox .footer .footer_box {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.course_bigbox .footer .footer_box .footer_logo {
+  float: left;
+}
+
+.course_bigbox .footer .footer_box .footer_tel {
+  margin-top: 30px;
+  float: right;
+}
+
+.course_bigbox .footer_bottom {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.course_bigbox .footer_bottom p {
+  font-size: 24px;
+  text-align: center;
+  color: #1d1d1d;
+  font-weight: 500;
+  line-height: 100px;
+  margin-right: 100px;
+}
+
+.course_bigbox .footer_bottom img {
+  position: absolute;
+  top: 38px;
+  left: 55%;
+}
