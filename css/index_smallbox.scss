@@ -52,7 +52,7 @@
         }
         
         .samll_box {
-            width: 320px;
+            width: 320/$sc+rem;
             margin: auto;
             header .logo {
                 float: left;
@@ -184,6 +184,7 @@
                 }
                 .com_articale {
                     padding: 10/$sc+rem 0;
+                    padding-bottom: 20/$sc+rem;
                     margin-top: 10/$sc+rem;
                     width: 100%;
                     background: #f8f8f8;
@@ -202,9 +203,9 @@
                         margin: auto;
                         p {
                             text-indent: 2em;
-                            font-size: 12/$sc+rem;
+                            font-size: 10/$sc+rem;
                             margin-bottom: 10/$sc+rem;
-                            line-height: 18/$sc+rem;
+                            line-height: 16/$sc+rem;
                             text-align: justify;
                         }
                         span {
@@ -253,7 +254,7 @@
                     margin-top: 10/$sc+rem;
                     li {
                         img {
-                            width: 100%;
+                            width: 280/$sc+rem;
                         }
                         &:nth-child(2) {
                             margin-top: 15/$sc+rem;
@@ -305,7 +306,7 @@
                         padding-bottom: 30/$sc+rem;
                         margin-bottom: 20/$sc+rem;
                         img {
-                            width: 100%;
+                            width: 280/$sc+rem;
                         }
                         h4 {
                             font-size: 14/$sc+rem;

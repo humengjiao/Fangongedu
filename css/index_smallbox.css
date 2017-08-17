@@ -51,7 +51,7 @@ body {
 }
 
 .samll_box {
-  width: 320px;
+  width: 16rem;
   margin: auto;
 }
 
@@ -208,6 +208,7 @@ body {
 
 .samll_box .com_title .com_articale {
   padding: 0.5rem 0;
+  padding-bottom: 1rem;
   margin-top: 0.5rem;
   width: 100%;
   background: #f8f8f8;
@@ -231,9 +232,9 @@ body {
 
 .samll_box .com_title .com_articale .articale_right p {
   text-indent: 2em;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   margin-bottom: 0.5rem;
-  line-height: 0.9rem;
+  line-height: 0.8rem;
   text-align: justify;
 }
 
@@ -285,7 +286,7 @@ body {
 }
 
 .samll_box .team .img_list li img {
-  width: 100%;
+  width: 14rem;
 }
 
 .samll_box .team .img_list li:nth-child(2) {
@@ -348,7 +349,7 @@ body {
 }
 
 .samll_box .Chinese .chinese_list li img {
-  width: 100%;
+  width: 14rem;
 }
 
 .samll_box .Chinese .chinese_list li h4 {
