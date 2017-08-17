@@ -159,6 +159,7 @@
                 }
             }
             .com_title {
+                
                 width: 100%;
                 margin: auto;
                 z-index: 1;
@@ -183,15 +184,15 @@
                     font-weight: 300;
                 }
                 .com_articale {
-                    padding: 10/$sc+rem 0;
-                    padding-bottom: 20/$sc+rem;
+                   
+                    height: 600/$sc+rem;
                     margin-top: 10/$sc+rem;
                     width: 100%;
                     background: #f8f8f8;
                     .articale_left {
-                        padding: 10/$sc+rem;
-                        padding-bottom: 20/$sc+rem;
-                        ;
+                        padding: 20/$sc+rem;
+                        padding-bottom: 10/$sc+rem;
+                        
                         img {
                             width: 200/$sc+rem;
                             display: block;
@@ -232,7 +233,7 @@
                 h3 {
                     font-size: 18/$sc+rem;
                     font-weight: 600;
-                    padding: 30/$sc+rem 0 5/$sc+rem 0;
+                    padding: 10/$sc+rem 0 5/$sc+rem 0;
                 }
                 img {
                     display: block;
