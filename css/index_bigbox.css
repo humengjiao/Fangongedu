@@ -76,7 +76,7 @@ body {
 }
 
 .bigbox .wapper {
-  width: 62.5%;
+  width: 1200px;
   height: auto;
   margin: auto;
 }
@@ -103,16 +103,14 @@ body {
 }
 
 .bigbox .wapper header {
-  width: 100%;
+  width: 1200px;
   height: 120px;
-  display: flex;
+  margin: auto;
 }
 
 .bigbox .wapper header a:nth-child(1) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin-top: 12px;
+  float: left;
 }
 
 .bigbox .wapper header a:nth-child(1) .left {
@@ -121,24 +119,18 @@ body {
 }
 
 .bigbox .wapper header a:nth-child(2) {
-  flex: 1;
+  margin-top: 30px;
+  float: right;
 }
 
-.bigbox .wapper header a:nth-child(3) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.bigbox .wapper header a:nth-child(3) .right {
+.bigbox .wapper header a:nth-child(2) .right {
   width: 265px;
   height: auto;
   margin-top: 30px;
 }
 
 .bigbox .wapper nav {
-  width: 100%;
+  width: 1200px;
   height: 65px;
   background: #A51C30;
   display: flex;
@@ -148,44 +140,23 @@ body {
   width: 100%;
   height: 65px;
   margin: 0 auto;
-  display: flex;
 }
 
 .bigbox .wapper nav .list li {
+  width: 240px;
+  display: inline-block;
   line-height: 65px;
-  display: flex;
   float: left;
-  width: 18%;
   justify-content: center;
   align-items: center;
 }
 
-.bigbox .wapper nav .list li:nth-child(2n+1) {
-  width: 2%;
+.bigbox .wapper nav .list li:hover p {
+  color: #dab96b;
 }
 
-.bigbox .wapper nav .list li:first-child {
-  width: .5%;
-}
-
-.bigbox .wapper nav .list li:last-child {
-  width: .5%;
-}
-
-.bigbox .wapper nav .list li:nth-child(8) {
-  width: 23%;
-}
-
-.bigbox .wapper nav .list li a {
-  display: inline-block;
-  color: white;
-  display: flex;
-  flex: 1;
-}
-
-.bigbox .wapper nav .list li a p {
-  margin: auto;
-  font-size: 20px;
+.bigbox .wapper nav .list li:first-child p {
+  color: #dab96b;
 }
 
 .bigbox .wapper nav .list li img {
@@ -194,15 +165,28 @@ body {
   height: 10px;
 }
 
+.bigbox .wapper nav .list li a {
+  display: inline-block;
+}
+
+.bigbox .wapper nav .list li a p {
+  line-height: 65px;
+  padding: 0 64px;
+  color: white;
+  margin: auto;
+  font-size: 20px;
+}
+
 .bigbox .banner {
   width: 100%;
   height: auto;
 }
 
 .bigbox .ad {
-  margin-top: -10px;
-  width: 100%;
+  width: 1200px;
   height: 330px;
+  margin: auto;
+  margin-top: -10px;
 }
 
 .bigbox .ad .ad_left {
@@ -291,8 +275,8 @@ body {
 }
 
 .bigbox .com_title .com_articale .articale_left {
-  width: 35%;
-  padding: 40px 0px 0 50px;
+  width: 37%;
+  padding: 60px 0px 0 60px;
 }
 
 .bigbox .com_title .com_articale .articale_left img {
@@ -301,10 +285,10 @@ body {
 }
 
 .bigbox .com_title .com_articale .articale_right {
-  width: 60%;
+  width: 63%;
   text-align: left;
   float: right;
-  padding: 0px 50px 10px 0;
+  padding: 0px 60px 10px 0;
 }
 
 .bigbox .com_title .com_articale .articale_right p {
@@ -332,68 +316,72 @@ body {
   margin-top: 8px;
 }
 
-.bigbox .team {
+.bigbox .team_box {
+  width: 100%;
+  background: #f8f8f8;
+}
+
+.bigbox .team_box .team {
   margin: 0 auto;
   margin-top: 170px;
-  width: 100%;
+  width: 1200px;
   height: 960px;
-  background: #f8f8f8;
   text-align: center;
 }
 
-.bigbox .team h3 {
+.bigbox .team_box .team h3 {
   font-family: "PingFang SC";
   font-size: 36px;
   font-weight: 800;
   padding: 70px 0 20px 0;
 }
 
-.bigbox .team img {
+.bigbox .team_box .team img {
   padding-bottom: 20px;
 }
 
-.bigbox .team p {
+.bigbox .team_box .team p {
   font-size: 18px;
 }
 
-.bigbox .team .img_list {
+.bigbox .team_box .team .img_list {
   display: inline-block;
   text-align: center;
   margin-top: 65px;
 }
 
-.bigbox .team .img_list li {
+.bigbox .team_box .team .img_list li {
   float: left;
 }
 
-.bigbox .team .img_list li:nth-child(2) {
+.bigbox .team_box .team .img_list li:nth-child(2) {
   margin-left: 50px;
 }
 
-.bigbox .team .img_list li img {
+.bigbox .team_box .team .img_list li img {
   width: 100%;
 }
 
-.bigbox .team .img_list li .csr {
+.bigbox .team_box .team .img_list li .csr {
   margin-top: 15px;
   text-align: center;
   display: block;
 }
 
-.bigbox .team .img_list li .csr p {
+.bigbox .team_box .team .img_list li .csr p {
   font-size: 18px;
   font-weight: 600;
   float: left;
 }
 
-.bigbox .team .img_list li .csr p.import {
+.bigbox .team_box .team .img_list li .csr p.import {
   font-size: 18px;
   font-weight: 600;
   color: #a51c30;
   float: left;
 }
 
-.bigbox .team .img_list li span a {
+.bigbox .team_box .team .img_list li span a {
   text-align: left;
   display: block;
   width: 170px;
@@ -490,25 +478,31 @@ body {
 .bigbox .campe {
   margin-top: 50px;
   width: 100%;
-  height: 655px;
+  background: url(../img/zb_bk.png);
   text-align: center;
-  background: url(../img/map_bk.png);
+  margin: 0 auto;
 }
 
 .bigbox .campe h3 {
-  font-family: "PingFang SC";
   font-size: 36px;
   font-weight: 800;
   padding: 40px 0 20px 0;
 }
 
-.bigbox .campe .map {
-  padding-top: 50px;
+.bigbox .campe img {
   padding-bottom: 20px;
 }
 
+.bigbox .campe .map {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 1200px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
 .bigbox .campe p {
-  margin-top: 20px;
   font-size: 18px;
 }
 
@@ -526,18 +520,20 @@ body {
 }
 
 .bigbox .footer .footer_box .footer_logo {
+  margin-top: 7px;
   float: left;
 }
 
 .bigbox .footer .footer_box .footer_tel {
-  margin-top: 30px;
+  margin-top: 38px;
   float: right;
 }
 
 .bigbox .footer_bottom {
   position: relative;
-  width: 100%;
-  height: 100px;
+  width: 1200px;
+  height: 80px;
+  margin: auto;
 }
 
 .bigbox .footer_bottom p {
@@ -545,12 +541,12 @@ body {
   text-align: center;
   color: #1d1d1d;
   font-weight: 500;
-  line-height: 100px;
+  line-height: 80px;
   margin-right: 100px;
 }
 
 .bigbox .footer_bottom img {
   position: absolute;
-  top: 38px;
-  left: 55%;
+  top: 29px;
+  left: 58%;
 }

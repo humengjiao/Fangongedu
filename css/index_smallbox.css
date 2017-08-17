@@ -51,64 +51,63 @@ body {
 }
 
 .samll_box {
-  width: 100%;
+  width: 320px;
+  margin: auto;
 }
 
 .samll_box header .logo {
   float: left;
-  width: 2.5rem;
+  width: 6rem;
   height: auto;
-  margin: 0.5rem 0 0.5rem 0.5rem;
+  margin: 1rem 0 0 0.75rem;
 }
 
 .samll_box header .click {
-  width: 1.25rem;
+  width: 0.9rem;
   float: right;
-  margin-top: 1.75rem;
-  margin-right: 0.5rem;
+  margin-top: 1.85rem;
+  margin-right: 0.75rem;
 }
 
 .samll_box nav {
+  overflow: hidden;
+  margin-top: 10px;
   height: 0;
   width: 100%;
   transition: all .5s;
 }
 
 .samll_box nav .hide {
-  height: 10rem;
-  margin: 0.05rem 0.5rem 0 0.5rem;
+  height: 7.75rem;
+  margin: 0 0.35rem;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
-.samll_box nav ul li {
+.samll_box nav .hide li {
   width: 100%;
-  height: 2rem;
+  height: 1.5rem;
   border-bottom: 0.05rem solid #eee;
 }
 
-.samll_box nav ul li:last-child {
+.samll_box nav .hide li:last-child {
   border-bottom: none;
 }
 
-.samll_box nav ul li a {
-  height: 2rem;
+.samll_box nav .hide li a {
+  height: 1.5rem;
   display: block;
   border-radius: 0.25rem;
   color: #A51C30;
-  line-height: 2rem;
+  line-height: 1.5rem;
   text-indent: 2em;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 500;
 }
 
-.samll_box nav ul li.cur a {
+.samll_box .hide li.cur a {
   background: #A51C30;
   color: white;
-}
-
-.samll_box nav ul li a:hover {
-  background: #eee;
 }
 
 .samll_box .banner {
@@ -116,16 +115,14 @@ body {
 }
 
 .samll_box .ad {
-  box-shadow: 0.05rem 0.15rem 0.1rem #ebebeb;
   margin-top: -0.5rem;
   width: 100%;
-  height: 7rem;
+  height: 6rem;
 }
 
 .samll_box .ad .ad_left {
-  box-shadow: 0.05rem 0.15rem 0.1rem #ebebeb;
   width: 50%;
-  height: 7rem;
+  height: 6rem;
   float: left;
   background: #A51C30;
 }
@@ -139,20 +136,22 @@ body {
 }
 
 .samll_box .ad .ad_left .sammll_left img {
-  width: 1.9rem;
+  width: 1.35rem;
   height: auto;
+  display: block;
+  margin: auto;
 }
 
 .samll_box .ad .ad_left p {
   color: white;
   font-size: 0.35rem;
-  line-height: 1rem;
+  line-height: 0.8rem;
   text-align: center;
 }
 
 .samll_box .ad .ad_right {
   width: 50%;
-  height: 7rem;
+  height: 6rem;
   float: right;
 }
 
@@ -165,14 +164,16 @@ body {
 }
 
 .samll_box .ad .ad_right .small_right img {
-  width: 2rem;
+  display: block;
+  margin: auto;
+  width: 1.4rem;
   height: auto;
 }
 
 .samll_box .ad .ad_right p {
   color: #A51C30;
   font-size: 0.35rem;
-  line-height: 1rem;
+  line-height: 0.8rem;
   text-align: center;
 }
 
@@ -184,16 +185,16 @@ body {
 }
 
 .samll_box .com_title h3 {
-  font-family: "PingFang SC";
-  font-size: 1rem;
-  padding: 1rem 0 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 1.5rem 0 0.25rem 0;
 }
 
 .samll_box .com_title img {
   display: block;
-  width: 8rem;
+  width: 6rem;
   margin: 0 auto;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
 }
 
 .samll_box .com_title h4 {
@@ -206,16 +207,15 @@ body {
 }
 
 .samll_box .com_title .com_articale {
-  box-shadow: 0.25rem 0.25rem 0.25rem #ebebeb;
-  margin-top: 1rem;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
   width: 100%;
-  height: 40rem;
   background: #f8f8f8;
 }
 
 .samll_box .com_title .com_articale .articale_left {
-  padding: 1rem;
-  padding-bottom: 0;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .samll_box .com_title .com_articale .articale_left img {
@@ -227,50 +227,46 @@ body {
 .samll_box .com_title .com_articale .articale_right {
   width: 14rem;
   margin: auto;
-  text-align: left;
 }
 
 .samll_box .com_title .com_articale .articale_right p {
   text-indent: 2em;
   font-size: 0.6rem;
-  color: #666666;
-  font-weight: 300;
-  text-align: left;
-  margin-bottom: 0.25rem;
-  line-height: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 0.9rem;
   text-align: justify;
 }
 
 .samll_box .com_title .com_articale .articale_right span a {
   float: right;
-  width: 5rem;
-  height: 1.75rem;
+  width: 4.5rem;
+  height: 1.2rem;
   background: #A51C30;
   border-radius: 0.25rem;
   text-align: center;
   color: white;
   font-size: 0.5rem;
   font-weight: bold;
-  line-height: 1.75rem;
+  line-height: 1.2rem;
 }
 
 .samll_box .team {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   width: 100%;
   text-align: center;
 }
 
 .samll_box .team h3 {
-  font-family: "PingFang SC";
-  font-size: 1rem;
-  padding: 0.5rem 0 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 1.5rem 0 0.25rem 0;
 }
 
 .samll_box .team img {
   display: block;
-  width: 8rem;
+  width: 6rem;
   margin: 0 auto;
-  margin-bottom: 15px;
+  padding-bottom: 0.25rem;
 }
 
 .samll_box .team h4 {
@@ -289,13 +285,11 @@ body {
 }
 
 .samll_box .team .img_list li img {
-  box-shadow: 0.05rem 0.25rem 0.25rem #ebebeb;
-  margin-top: 0.5rem;
   width: 100%;
 }
 
 .samll_box .team .img_list li:nth-child(2) {
-  margin-top: 1.5rem;
+  margin-top: 0.75rem;
 }
 
 .samll_box .team .img_list li .csr {
@@ -303,41 +297,38 @@ body {
 }
 
 .samll_box .team .img_list li .csr p {
-  font-size: 0.7rem;
-  font-weight: 300;
+  font-size: 0.6rem;
   float: left;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
 
-.samll_box .team .img_list li .csr p.import {
-  font-size: 0.7rem;
-  font-weight: 500;
+.samll_box .team .img_list li .csr span.import {
+  font-size: 0.6rem;
   color: #a51c30;
   float: left;
 }
 
 .samll_box .Chinese {
-  padding-top: 1.5rem;
-  width: 16rem;
   text-align: center;
-  height: auto;
-  margin: 0 auto;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  width: 100%;
 }
 
 .samll_box .Chinese h3 {
-  font-family: "PingFang SC";
-  font-size: 20px;
-  padding: 0.5rem 0 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 1.5rem 0 0.25rem 0;
 }
 
 .samll_box .Chinese img {
   display: block;
-  width: 8rem;
+  width: 9rem;
   margin: 0 auto;
-  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
 }
 
-.samll_box .Chinese h4 {
+.samll_box .Chinese h5 {
   display: block;
   width: 14rem;
   margin: 0 auto;
@@ -347,86 +338,72 @@ body {
 }
 
 .samll_box .Chinese .chinese_list {
+  text-align: left;
   margin-top: 0.5rem;
 }
 
 .samll_box .Chinese .chinese_list li {
-  margin-bottom: 1.5rem;
-  float: left;
-}
-
-.samll_box .Chinese .chinese_list li:nth-child(2) {
-  float: right;
-}
-
-.samll_box .Chinese .chinese_list li:nth-child(4) {
-  float: right;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .samll_box .Chinese .chinese_list li img {
-  box-shadow: 0.05rem 0.25rem 0.25rem #ebebeb;
   width: 100%;
-  height: auto;
 }
 
 .samll_box .Chinese .chinese_list li h4 {
-  text-align: left;
-  font-family: "PingFang SC";
-  font-size: 1rem;
-  margin: 0.5rem 0 0.5rem 0.5rem;
-  font-weight: 400;
+  font-size: 0.7rem;
+  margin: 0.5rem 0 0.4rem 1rem;
   color: #A51C30;
 }
 
 .samll_box .Chinese .chinese_list li .conten_ads {
-  padding: 0 10px;
-  text-align: left;
+  padding: 0 20px;
 }
 
 .samll_box .Chinese .chinese_list li .conten_ads p {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   font-weight: 400;
-  line-height: 1.3rem;
-  color: #333333;
+  line-height: 0.8rem;
   text-align: justify;
 }
 
 .samll_box .Chinese .chinese_list li span {
   display: block;
-  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 10px 20px;
 }
 
 .samll_box .Chinese .chinese_list li span a {
   float: left;
-  width: 5rem;
-  height: 1.75rem;
-  font-size: 0.6rem;
-  font-weight: 500;
+  width: 4.5rem;
+  height: 1.2rem;
   background: #A51C30;
-  color: white;
   border-radius: 0.25rem;
-  line-height: 1.75rem;
+  text-align: center;
+  color: white;
+  font-size: 0.5rem;
+  font-weight: bold;
+  line-height: 1.2rem;
 }
 
 .samll_box .campe {
-  margin-top: 1rem;
   width: 100%;
-  height: 11.5rem;
+  height: 11rem;
   text-align: center;
-  background-image: url(../img/map_bk.png);
+  background-image: url(../img/zb_bk.png);
 }
 
 .samll_box .campe h3 {
-  font-family: "PingFang SC";
-  font-size: 1rem;
-  padding: 0.5rem 0 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 1.5rem 0 0.25rem 0;
 }
 
 .samll_box .campe img {
   display: block;
-  width: 8rem;
+  width: 6rem;
   margin: 0 auto;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
 }
 
 .samll_box .campe h4 {
@@ -440,34 +417,33 @@ body {
 
 .samll_box .campe .map {
   width: 100%;
-  padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
 
 .samll_box .footer {
   width: 100%;
-  height: 6.5rem;
+  height: 4rem;
   background: #A51C30;
 }
 
 .samll_box .footer .footer_logo {
-  padding-top: 1.2rem;
+  padding-top: 0.7rem;
 }
 
 .samll_box .footer .footer_logo img {
   display: block;
-  width: 14rem;
+  width: 10rem;
   margin: 0 auto;
 }
 
 .samll_box .footer_bottom {
   width: 100%;
-  height: 2.5rem;
-  padding-top: 1rem;
+  height: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 .samll_box .footer_bottom img {
-  width: 11.5rem;
+  width: 9rem;
   display: block;
   margin: 0 auto;
 }
