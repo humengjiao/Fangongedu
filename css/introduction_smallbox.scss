@@ -52,105 +52,92 @@ body {
 }
 
 .contrduction_smallbox {
-    width: 100%;
+    width: 320/$sc+rem;
+    margin: auto;
     header .logo {
         float: left;
-        width: 50/$sc+rem;
+        width: 120/$sc+rem;
         height: auto;
-        margin: 10/$sc+rem 0 10/$sc+rem 10/$sc+rem;
+        margin: 20/$sc+rem 0 0 15/$sc+rem;
     }
     header .click {
-        width: 25/$sc+rem;
+        width: 18/$sc+rem;
         float: right;
-        margin-top: 35/$sc+rem;
-        margin-right: 10/$sc+rem;
+        margin-top: 37/$sc+rem;
+        margin-right: 15/$sc+rem;
     }
     nav {
         overflow: hidden;
+        margin-top: 10px;
         height: 0;
-        width: 100%;    
-        transition: all .5s;
-    }
-    nav .hide {
-        height:200/$sc+rem; 
-        margin: 1/$sc+rem 10/$sc+rem 0 10/$sc+rem;
-        box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-    }
-    nav ul li {
         width: 100%;
-        height: 40/$sc+rem;
-        border-bottom: 1/$sc+rem solid #eee;
+        transition: all .5s;
+        .hide {
+            height: 155/$sc+rem;
+            margin: 0 7/$sc+rem;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            li {
+                width: 100%;
+                height: 30/$sc+rem;
+                border-bottom: 1/$sc+rem solid #eee;
+                &:last-child {
+                    border-bottom: none;
+                }
+                a {
+                    height: 30/$sc+rem;
+                    display: block;
+                    border-radius: 5/$sc+rem;
+                    color: #A51C30;
+                    line-height: 30/$sc+rem;
+                    text-indent: 2em;
+                    font-size: 10/$sc+rem;
+                    font-weight: 500;
+                }
+            }
+        }
     }
-    nav ul li:last-child {
-        border-bottom: none;
-    }
-    nav ul li a {
-        height: 40/$sc+rem;
-        display: block;
-        border-radius: 5/$sc+rem;
-        color: #A51C30;
-        line-height: 40/$sc+rem;
-        text-indent: 2em;
-        font-size: 14/$sc+rem;
-        font-weight: 500;
-    }
-    nav ul li.cur a {
+    .hide li.cur a {
         background: #A51C30;
         color: white;
-    }
-    nav ul li a:hover {
-        background: #eee;
     }
     .banner {
         width: 100%;
     }
     .com_title {
-       
         width: 100%;
         margin: auto;
-        z-index: 999;
         text-align: center;
         h3 {
-         
-            color: #A51C30;
-            font-size: 20/$sc+rem;
-            padding: 20/$sc+rem 0 10/$sc+rem 0;
+            font-size: 18/$sc+rem;
+            padding: 30/$sc+rem 0 4/$sc+rem 0;
         }
         h4 {
-            display: block;
             width: 280/$sc+rem;
-            margin: 0 auto;
-            font-size: 12/$sc+rem;
-            text-align: center;
+            font-size: 10/$sc+rem;
             font-weight: 300;
-            color: #A51C30;
+            margin: auto;
+        }
+        img {
+            padding: 20/$sc+rem;
+            width: 280/$sc+rem;
+            display: block;
+            margin: auto;
         }
         .com_articale {
             box-shadow: 5/$sc+rem 5/$sc+rem 5/$sc+rem #ebebeb;
-            margin-top: 20/$sc+rem;
             width: 100%;
             background: #f8f8f8;
-            .articale_left {
-                padding: 20/$sc+rem;
-                padding-bottom: 0;
-                img {
-                    width: 230/$sc+rem;
-                    display: block;
-                    margin: auto;
-                }
-            }
-            .articale_right {
-                padding-top: 20/$sc+rem;
+            .articale {
+                padding: 20/$sc+rem 0;
                 width: 280/$sc+rem;
                 margin: 0 auto;
                 p {
                     text-indent: 2em;
-                    font-size: 14/$sc+rem;
-                    color: #666666;
+                    font-size: 12/$sc+rem;
                     font-weight: 300;
-                    margin-bottom: 8/$sc+rem;
-                    line-height: 24/$sc+rem;
+                    margin-bottom: 10/$sc+rem;
+                    line-height: 18/$sc+rem;
                     text-align: justify;
                 }
             }
@@ -161,19 +148,17 @@ body {
         height: auto;
         margin: 0 auto;
         h4 {
-            padding: 20/$sc+rem 0 5/$sc+rem 0;
-            font-size: 20/$sc+rem;
+            padding: 30/$sc+rem 0 4/$sc+rem 0;
+            font-size: 14/$sc+rem;
             text-align: center;
-            color: #A51C30;
         }
         h1 {
-            padding-bottom: 15/$sc+rem;
-            font-size: 16/$sc+rem;
+            padding-bottom: 10/$sc+rem;
+            font-size: 10/$sc+rem;
             text-align: center;
-            color: #A51C30;
         }
         .map_roat {
-            padding: 10/$sc+rem 0 10/$sc+rem 0;
+            padding: 5/$sc+rem 0 10/$sc+rem 0;
             width: 280/$sc+rem;
             display: block;
             margin: 0 auto;
@@ -184,171 +169,163 @@ body {
         margin: 0 auto;
         h3 {
             text-align: center;
-            color: #A51C30;
-            font-size: 20/$sc+rem;
-            padding: 20/$sc+rem 0 10/$sc+rem 0;
+            font-size: 18/$sc+rem;
+            padding: 30/$sc+rem 0 10/$sc+rem 0;
         }
         p {
             text-indent: 2em;
-            font-size: 14/$sc+rem;
-            color: #666666;
+            font-size: 12/$sc+rem;
             font-weight: 300;
-            margin-bottom: 8/$sc+rem;
-            line-height: 24/$sc+rem;
+            margin-bottom: 10/$sc+rem;
+            line-height: 18/$sc+rem;
             text-align: justify;
         }
     }
     .wenhua {
-        width: 100%;
+        width: 300/$sc+rem;
         margin: 0 auto;
         h3 {
             text-align: center;
-            color: #A51C30;
-            font-size: 20/$sc+rem;
-            padding: 20/$sc+rem 0 10/$sc+rem 0;
+            font-size: 18/$sc+rem;
+            padding: 30/$sc+rem 0 4/$sc+rem 0;
         }
         .logo_mean {
             width: 300/$sc+rem;
             display: block;
             margin: 0 auto;
-            padding-bottom: 10/$sc+rem;
+        }
+        .three_mean {
+            display: block;
+            width: 260/$sc+rem;
+            margin: 10/$sc+rem auto;
         }
         .wenhua_bottom {
             width: 280/$sc+rem;
             display: block;
             margin: 0 auto;
+            padding-top: 8/$sc+rem;
             li {
-                font-size: 14px;
+                font-size: 12/$sc+rem;
                 text-align: justify;
-                margin: 5px 0;
-                font-weight: 300;
+                text-align: center;
+                i {
+                    font-style: normal;
+                    font-size: 15/$sc+rem;
+                    color: #A51C30;
+                }
             }
         }
         p {
             margin-bottom: 10/$sc+rem;
             line-height: 36/$sc+rem;
-            text-align: justify;          
+            text-align: justify;
             display: block;
             font-size: 20/$sc+rem;
             color: #666666;
             text-indent: 2em;
         }
-        .three_mean{
-                display: block;
-                width: 260/$sc+rem;
-                margin: 20/$sc+rem auto;
-            }
     }
-    
-    
-    
-    
-     .zhichi {
+    .zhichi {
         width: 280/$sc+rem;
         margin: 0 auto;
-       h3 {
+        h3 {
             text-align: center;
-            color: #A51C30;
-            font-size: 20/$sc+rem;
-            padding: 20/$sc+rem 0 10/$sc+rem 0;
+            font-size: 18/$sc+rem;
+            padding: 40/$sc+rem 0 8/$sc+rem 0;
         }
         p {
             text-indent: 2em;
-            font-size: 14/$sc+rem;
-            color: #666666;
+            font-size: 12/$sc+rem;
             font-weight: 300;
-            margin-bottom: 8/$sc+rem;
-            line-height: 24/$sc+rem;
+            margin-bottom: 10/$sc+rem;
+            line-height: 18/$sc+rem;
             text-align: justify;
         }
         .qianming {
             margin-top: -10/$sc+rem;
-          position: relative;
-            width: 200/$sc+rem;
+            position: relative;
+            width: 180/$sc+rem;
             float: right;
             span {
                 position: absolute;
                 top: 0;
                 left: 0;
-               line-height: 40/$sc+rem;
-                 font-weight: 300;
-                  font-size: 14/$sc+rem;
-                  color: #666666;
+                line-height: 40/$sc+rem;
+                font-weight: 300;
+                font-size: 12/$sc+rem;
             }
             img {
                 position: absolute;
-                top: 0;
-                left: 150/$sc+rem;
-                width: 40/$sc+rem;
+                top: 5/$sc+rem;
+                left: 130/$sc+rem;
+                width: 35/$sc+rem;
                 margin-left: 10/$sc+rem;
             }
         }
     }
-    
-    
-    
-     .news {
-        width: 100%;     
+    .news {
+        width: 100%;
         background: #f8f8f8;
         margin-top: 50/$sc+rem;
         .news_box {
             width: 280/$sc+rem;
             background: #f8f8f8;
             margin: 0 auto;
-          h3 {
-            text-align: center;
-            color: #A51C30;
-            font-size: 20/$sc+rem;
-            padding: 20/$sc+rem 0;
-           }
+            h3 {
+                text-align: center;
+                font-size: 18/$sc+rem;
+                padding: 40/$sc+rem 0 15/$sc+rem 0;
+            }
             .news_img {
                 width: 220/$sc+rem;
                 display: block;
                 margin: 0 auto;
                 padding-bottom: 20/$sc+rem;
             }
-            .news_right {                     
+            .news_right {
                 .lines {
                     position: relative;
                     img {
                         position: absolute;
-                        top: 7/$sc+rem;
+                        top: 2/$sc+rem;
                         left: 0;
-                        margin-left:5/$sc+rem;
-                        width: 16/$sc+rem;
+                        margin-left: 5/$sc+rem;
+                        width: 15/$sc+rem;
                         display: block;
                         float: left;
                         display: inline-block;
                     }
                     h5 {
-                        width: 250/$sc+rem;
-                        float: right;
-                        font-family: "PingFang SC";
-                        font-size: 16/$sc+rem;
-                        line-height: 30/$sc+rem;                        
-                        display: inline-block;
-                        margin-left: 10/$sc+rem;
-                        color: #A51C30;
+                        a {
+                            width: 250/$sc+rem;
+                            float: right;
+                            font-family: "PingFang SC";
+                            font-size: 12/$sc+rem;
+                            line-height: 20/$sc+rem;
+                            display: inline-block;
+                            margin-left: 10/$sc+rem;
+                            color: #A51C30;
+                        }
                     }
                     p {
                         position: absolute;
-                        top:28/$sc+rem;
-                        left: 80/$sc+rem;
+                        top: 15/$sc+rem;
+                        left: 68/$sc+rem;
                         float: left;
-                        font-size: 14/$sc+rem;
+                        font-size: 12/$sc+rem;
                         font-weight: 300;
-                        display: inline-block;                      
-                        margin-top: 3/$sc+rem;
+                        display: inline-block;
+                        margin-top: 8/$sc+rem;
                         margin-left: 8/$sc+rem;
                     }
                 }
                 p {
-                     font-size: 14/$sc+rem;
-                     font-weight: 300;                 
-                    display: inline-block;
-                    margin-top: 10/$sc+rem;
+                    margin-top: 8/$sc+rem;
                     text-indent: 2em;
-                    line-height: 26/$sc+rem;
+                    font-size: 12/$sc+rem;
+                    font-weight: 300;
+                    margin-bottom: 10/$sc+rem;
+                    line-height: 20/$sc+rem;
                     text-align: justify;
                 }
             }
@@ -356,53 +333,54 @@ body {
                 padding-bottom: 15/$sc+rem;
                 position: relative;
                 img {
-                  width: 100%;
-                  margin-top: 20/$sc+rem;
+                    width: 100%;
+                    margin: 20/$sc+rem 0 8/$sc+rem 0;
                 }
                 h4 {
                     font-size: 18/$sc+rem;
                     position: absolute;
-                    top: 22/$sc+rem;
-                    left: 10/$sc+rem;
+                    top: 21/$sc+rem;
+                    left: 6/$sc+rem;
                 }
                 p {
-                    margin-top: 10/$sc+rem;
-                    font-size: 14/$sc+rem;
+                    text-indent: 2em;
+                    font-size: 12/$sc+rem;
                     font-weight: 300;
-                    line-height: 26/$sc+rem;
+                    margin-bottom: 10/$sc+rem;
+                    line-height: 20/$sc+rem;
                     text-align: justify;
                 }
             }
         }
     }
-    
     .colume {
         padding-top: 20/$sc+rem;
         position: relative;
         width: 280/$sc+rem;
         margin: 0 auto;
-        img{
+        img {
             width: 100%;
         }
         .ml {
-             font-size: 18/$sc+rem;
-             position: absolute;
-             top: 22/$sc+rem;
-             left: 20/$sc+rem;
-             letter-spacing: 5/$sc+rem;
+            font-size: 18/$sc+rem;
+            position: absolute;
+            top: 22/$sc+rem;
+            left: 20/$sc+rem;
+            letter-spacing: 5/$sc+rem;
         }
         .show {
+            margin-top: 10/$sc+rem;
             h3 {
-                font-size: 16/$sc+rem;
-                margin-bottom: 8/$sc+rem;
-                margin-top: 8/$sc+rem;
+                font-size: 14/$sc+rem;
+                margin-bottom: 6/$sc+rem;
+                margin-top: 10/$sc+rem;
             }
             p {
-                font-size: 14/$sc+rem;
+                font-size: 12/$sc+rem;
                 font-weight: 300;
                 margin-bottom: 8/$sc+rem;
+                line-height: 20/$sc+rem;
                 text-align: justify;
-                line-height: 26/$sc+rem;
             }
             .hide {
                 height: 0;
@@ -413,214 +391,110 @@ body {
         .click_on {
             margin-top: 5/$sc+rem;
             float: right;
-            width: 100/$sc+rem;
-            height: 35/$sc+rem;
+            width: 90/$sc+rem;
+            height: 30/$sc+rem;
             background: #A51C30;
             border-radius: 5/$sc+rem;
             p {
                 text-align: center;
                 color: white;
-                font-size: 14/$sc+rem;
+                font-size: 10/$sc+rem;
                 font-weight: 500;
-                line-height: 35/$sc+rem;
+                line-height: 30/$sc+rem;
             }
         }
     }
-    
     .tuijian {
         padding-top: 20/$sc+rem;
         position: relative;
         width: 280/$sc+rem;
         height: 220/$sc+rem;
         margin: 0 auto;
-        img{
+        img {
             width: 100%;
         }
         .tjy {
             padding-bottom: 20/$sc+rem;
             font-size: 16/$sc+rem;
-             position: absolute;
-             top: 22/$sc+rem;
-             left: 20/$sc+rem;
-             letter-spacing: 5/$sc+rem;
+            position: absolute;
+            top: 22/$sc+rem;
+            left: 10/$sc+rem;
+            letter-spacing: 2/$sc+rem;
         }
         .show {
-           
+            margin-top: 10/$sc+rem;
             p {
                 float: left;
-                font-size: 14/$sc+rem;
-                font-weight: 400;
-                margin-bottom: 3/$sc+rem;
-                margin-top: 10/$sc+rem;
+                margin-top: 8/$sc+rem;
                 text-align: justify;
-                line-height: 26/$sc+rem;
+                font-size: 12/$sc+rem;
+                line-height: 20/$sc+rem;
             }
             span {
                 float: right;
-                font-size: 12/$sc+rem;
+                font-size: 10/$sc+rem;
                 font-weight: 300;
-                margin-bottom: 15/$sc+rem;
-                margin-top: 10/$sc+rem;
-                line-height: 24/$sc+rem;
-            }
-            .hide {
-                height: 0;
-                overflow: hidden;
-                transition: all .3s;
-            }
-        }
-         .click_on {
-            margin-bottom: 30/$sc+rem;
-            margin-top: 5/$sc+rem;
-            float: right;
-            width: 100/$sc+rem;
-            height: 35/$sc+rem;
-            background: #A51C30;
-            border-radius: 5/$sc+rem;
-            p {
-                text-align: center;
-                color: white;
-                font-size: 14/$sc+rem;
-                font-weight: 500;
-                line-height: 35/$sc+rem;
-            }
-        }
-    }
-    
-    
-    
-    
-    .hf_road {      
-        width: 280/$sc+rem;
-        margin: 0 auto;
-        position: relative;
-        .road_book {            
-            span {
-                position: absolute;
-                top:10/$sc+rem;
-                left: 0;
-                display: inline-block;
-                width: 8/$sc+rem;
-                height: 8/$sc+rem;
-                transform-origin: center center;
-                transform: rotate(45deg);
-                background: #A51C30;
-                float: left;
-                margin-top: 7/$sc+rem;
-                
-            }
-            h3 {
-                position: absolute;
-                top:10/$sc+rem;
-                left: 20/$sc+rem;
-                display: block;
-                width: 260/$sc+rem;
-                
-                font-size: 16/$sc+rem;               
-                color: #A51C30;
-                float: left;
-            }
-            p {
-                position: absolute;
-                top:33/$sc+rem;
-                left: 30/$sc+rem;
-                padding-bottom: 15/$sc+rem;
-                font-size: 14/$sc+rem;
-                font-weight: 300;
+                margin-bottom: 5/$sc+rem;
+                margin-top: 5/$sc+rem;
                 line-height: 20/$sc+rem;
-                float: left;
-                margin-left: 15/$sc+rem;
-            }
-        }
-        .road_main {
-           padding-top: 70/$sc+rem;
-            img {
-                display: block;
-                width: 220/$sc+rem; 
-                margin: 0 auto;
-                padding-bottom: 15/$sc+rem;
-            }
-            .road_right {
-              margin: 0 auto;
-                width: 280/$sc+rem;
-               display: block;
-                p {
-                    font-size: 14/$sc+rem;
-                    font-weight: 300;
-                    margin-bottom: 8/$sc+rem;
-                    text-indent: 2em;
-                    line-height: 26/$sc+rem;
-                }
             }
             .hide {
                 height: 0;
                 overflow: hidden;
                 transition: all .3s;
-                p {
-                    font-size: 14/$sc+rem;
-                    font-weight: 300;
-                    margin-bottom: 8/$sc+rem;
-                    text-indent: 2em;
-                    line-height: 26/$sc+rem;
-                     text-align: justify;
-                }
             }
-            .click_on {
-            margin-bottom: 30/$sc+rem;
+        }
+        .click_on {
             margin-top: 5/$sc+rem;
             float: right;
-            width: 100/$sc+rem;
-            height: 35/$sc+rem;
+            width: 90/$sc+rem;
+            height: 30/$sc+rem;
             background: #A51C30;
             border-radius: 5/$sc+rem;
             p {
                 text-align: center;
                 color: white;
-                font-size: 14/$sc+rem;
+                font-size: 10/$sc+rem;
                 font-weight: 500;
-                line-height: 35/$sc+rem;
+                line-height: 30/$sc+rem;
             }
         }
-        }
     }
-    
-     .hf_dream {
+    .hf_road {
         padding-top: 20/$sc+rem;
         width: 280/$sc+rem;
         margin: 0 auto;
         position: relative;
         .road_book {
             span {
-                 position: absolute;
-                top:10/$sc+rem;
+                position: absolute;
+                top: 30/$sc+rem;
                 left: 0;
                 display: inline-block;
-                width: 8/$sc+rem;
-                height: 8/$sc+rem;
+                width: 6/$sc+rem;
+                height: 6/$sc+rem;
                 transform-origin: center center;
                 transform: rotate(45deg);
                 background: #A51C30;
                 float: left;
                 margin-top: 7/$sc+rem;
-                
             }
-              h3 {
+            h3 {
                 position: absolute;
-                top:10/$sc+rem;
+                top: 30/$sc+rem;
                 left: 20/$sc+rem;
                 display: block;
                 width: 260/$sc+rem;
-                
-                font-size: 16/$sc+rem;               
+                font-size: 14/$sc+rem;
                 color: #A51C30;
                 float: left;
             }
             p {
                 position: absolute;
-                top:34/$sc+rem;
-                left: 45/$sc+rem;
+                top: 53/$sc+rem;
+                left: 0/$sc+rem;
                 padding-bottom: 15/$sc+rem;
-                font-size: 14/$sc+rem;
+                font-size: 10/$sc+rem;
                 font-weight: 300;
                 line-height: 20/$sc+rem;
                 float: left;
@@ -628,24 +502,24 @@ body {
             }
         }
         .road_main {
-             padding-top: 50/$sc+rem;
+            padding-top: 60/$sc+rem;
             img {
                 display: block;
-                width: 220/$sc+rem; 
+                width: 220/$sc+rem;
                 margin: 0 auto;
                 padding-bottom: 15/$sc+rem;
             }
             .road_right {
-                 margin: 0 auto;
+                margin: 0 auto;
                 width: 280/$sc+rem;
                 display: block;
                 p {
-                    font-size: 14/$sc+rem;
+                    text-indent: 2em;
+                    font-size: 12/$sc+rem;
                     font-weight: 300;
                     margin-bottom: 8/$sc+rem;
-                    text-indent: 2em;
-                    line-height: 26/$sc+rem;
-                     text-align: justify;
+                    line-height: 20/$sc+rem;
+                    text-align: justify;
                 }
             }
             .hide {
@@ -653,35 +527,129 @@ body {
                 overflow: hidden;
                 transition: all .3s;
                 p {
-                    font-size: 14/$sc+rem;
+                    text-indent: 2em;
+                    font-size: 12/$sc+rem;
                     font-weight: 300;
                     margin-bottom: 8/$sc+rem;
-                    text-indent: 2em;
-                    line-height: 26/$sc+rem;
-                     text-align: justify;
+                    line-height: 20/$sc+rem;
+                    text-align: justify;
                 }
             }
-           .click_on {
-            margin-bottom: 20/$sc+rem;
-            margin-top: 5/$sc+rem;
-            float: right;
-            width: 100/$sc+rem;
-            height: 35/$sc+rem;
-            background: #A51C30;
-            border-radius: 5/$sc+rem;
-            p {
-                
-                text-align: center;
-                color: white;
-                font-size: 14/$sc+rem;
-                font-weight: 500;
-                line-height: 35/$sc+rem;
+            .click_on {
+                margin-top: 5/$sc+rem;
+                float: right;
+                width: 90/$sc+rem;
+                height: 30/$sc+rem;
+                background: #A51C30;
+                border-radius: 5/$sc+rem;
+                p {
+                    text-align: center;
+                    color: white;
+                    font-size: 10/$sc+rem;
+                    font-weight: 500;
+                    line-height: 30/$sc+rem;
+                }
             }
         }
-       
+    }
+    .hf_dream {
+        padding-top: 20/$sc+rem;
+        width: 280/$sc+rem;
+        margin: 0 auto;
+        position: relative;
+        .road_book {
+            span {
+                position: absolute;
+                top: 30/$sc+rem;
+                left: 0;
+                display: inline-block;
+                width: 6/$sc+rem;
+                height: 6/$sc+rem;
+                transform-origin: center center;
+                transform: rotate(45deg);
+                background: #A51C30;
+                float: left;
+                margin-top: 7/$sc+rem;
+            }
+            h3 {
+                position: absolute;
+                top: 30/$sc+rem;
+                left: 20/$sc+rem;
+                display: block;
+                width: 260/$sc+rem;
+                font-size: 14/$sc+rem;
+                color: #A51C30;
+                float: left;
+            }
+            p {
+                position: absolute;
+                top: 50/$sc+rem;
+                left: 30/$sc+rem;
+                padding-bottom: 15/$sc+rem;
+                font-size: 10/$sc+rem;
+                font-weight: 300;
+                line-height: 20/$sc+rem;
+                float: left;
+                margin-left: 15/$sc+rem;
+            }
+        }
+        .road_main {
+            padding-top: 60/$sc+rem;
+            img {
+                display: block;
+                width: 220/$sc+rem;
+                margin: 0 auto;
+                padding-bottom: 15/$sc+rem;
+            }
+            img {
+                display: block;
+                width: 220/$sc+rem;
+                margin: 0 auto;
+                padding-bottom: 15/$sc+rem;
+            }
+            .road_right {
+                margin: 0 auto;
+                width: 280/$sc+rem;
+                display: block;
+                p {
+                    text-indent: 2em;
+                    font-size: 12/$sc+rem;
+                    font-weight: 300;
+                    margin-bottom: 8/$sc+rem;
+                    line-height: 20/$sc+rem;
+                    text-align: justify;
+                }
+            }
+            .hide {
+                height: 0;
+                overflow: hidden;
+                transition: all .3s;
+                p {
+                    text-indent: 2em;
+                    font-size: 12/$sc+rem;
+                    font-weight: 300;
+                    margin-bottom: 8/$sc+rem;
+                    line-height: 20/$sc+rem;
+                    text-align: justify;
+                }
+            }
+            .click_on {
+                margin-top: 5/$sc+rem;
+                float: right;
+                width: 90/$sc+rem;
+                height: 30/$sc+rem;
+                background: #A51C30;
+                border-radius: 5/$sc+rem;
+                p {
+                    text-align: center;
+                    color: white;
+                    font-size: 10/$sc+rem;
+                    font-weight: 500;
+                    line-height: 30/$sc+rem;
+                }
+            }
         }
     }
-    
     .new_book {
         padding-bottom: 20/$sc+rem;
         padding-top: 20/$sc+rem;
@@ -689,37 +657,35 @@ body {
         margin: 0 auto;
         position: relative;
         .road_book {
-            span {
-                 position: absolute;
-                top:10/$sc+rem;
+             span {
+                position: absolute;
+                top: 30/$sc+rem;
                 left: 0;
                 display: inline-block;
-                width: 8/$sc+rem;
-                height: 8/$sc+rem;
+                width: 6/$sc+rem;
+                height: 6/$sc+rem;
                 transform-origin: center center;
                 transform: rotate(45deg);
                 background: #A51C30;
                 float: left;
                 margin-top: 7/$sc+rem;
-                
             }
-              h3 {
+            h3 {
                 position: absolute;
-                top:10/$sc+rem;
+                top: 30/$sc+rem;
                 left: 20/$sc+rem;
                 display: block;
                 width: 260/$sc+rem;
-                
-                font-size: 16/$sc+rem;              
+                font-size: 14/$sc+rem;
                 color: #A51C30;
                 float: left;
             }
             p {
                 position: absolute;
-                top:34/$sc+rem;
-                left: 45/$sc+rem;
+                top: 50/$sc+rem;
+                left: 0/$sc+rem;
                 padding-bottom: 15/$sc+rem;
-                font-size: 14/$sc+rem;
+                font-size: 10/$sc+rem;
                 font-weight: 300;
                 line-height: 20/$sc+rem;
                 float: left;
@@ -727,83 +693,68 @@ body {
             }
         }
         .road_main {
-            padding-top: 50/$sc+rem;
+            padding-top: 60/$sc+rem;
             p {
-                font-size: 14/$sc+rem;
+                text-indent: 2em;
+                font-size: 12/$sc+rem;
                 font-weight: 300;
                 margin-bottom: 8/$sc+rem;
-                text-indent: 2em;
-                line-height: 26/$sc+rem;
+                line-height: 20/$sc+rem;
+                text-align: justify;
             }
         }
         .hide {
-                height: 0;
-                overflow: hidden;
-                transition: all .3s;
-                p {
-                   font-size: 14/$sc+rem;
+            height: 0;
+            overflow: hidden;
+            transition: all .3s;
+            p {
+                text-indent: 2em;
+                font-size: 12/$sc+rem;
                 font-weight: 300;
                 margin-bottom: 8/$sc+rem;
-                text-indent: 2em;
-                line-height: 26/$sc+rem;
-                }
+                line-height: 20/$sc+rem;
+                text-align: justify;
             }
-           .click_on {
-            margin-bottom: 30/$sc+rem;
+        }
+        .click_on {
             margin-top: 5/$sc+rem;
             float: right;
-            width: 100/$sc+rem;
-            height: 35/$sc+rem;
+            width: 90/$sc+rem;
+            height: 30/$sc+rem;
             background: #A51C30;
             border-radius: 5/$sc+rem;
             p {
                 text-align: center;
                 color: white;
-                font-size: 14/$sc+rem;
+                font-size: 10/$sc+rem;
                 font-weight: 500;
-                line-height: 35/$sc+rem;
+                line-height: 30/$sc+rem;
             }
         }
     }
-    
     .footer {
-        margin-top: 50/$sc+rem;
-        width: 100%;
-        height: 130/$sc+rem;
-        background: #A51C30;
-        .footer_logo {
-            padding-top: 20/$sc+rem;
-            img {
-                 display: block;
-                 width: 300/$sc+rem;
-                 margin: 0 auto;
+         margin: 0 auto;
+        margin-top: 45/$sc+rem;
+                width: 100%;
+                height: 80/$sc+rem;
+                background: #A51C30;
+                .footer_logo {
+                    padding-top: 14/$sc+rem;
+                    img {
+                        display: block;
+                        width: 200/$sc+rem;
+                        margin: 0 auto;
+                    }
+                }
             }
-        }
-    }
-    .footer_bottom {
-        width: 100%;
-        height: 50/$sc+rem;
-        padding-top: 20/$sc+rem;
-        img {
-            width: 230/$sc+rem;
-            display: block;
-             margin: 0 auto;
-        }
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+            .footer_bottom {
+                width: 100%;
+                height: 30/$sc+rem;
+                padding-top: 10/$sc+rem;
+                img {
+                    width: 180/$sc+rem;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
 }

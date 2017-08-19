@@ -76,7 +76,7 @@ body {
 }
 
 .course_bigbox .wapper {
-  width: 62.5%;
+  width: 1200px;
   height: auto;
   margin: auto;
 }
@@ -103,16 +103,14 @@ body {
 }
 
 .course_bigbox .wapper header {
-  width: 100%;
+  width: 1200px;
   height: 120px;
-  display: flex;
+  margin: auto;
 }
 
 .course_bigbox .wapper header a:nth-child(1) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin-top: 12px;
+  float: left;
 }
 
 .course_bigbox .wapper header a:nth-child(1) .left {
@@ -121,24 +119,18 @@ body {
 }
 
 .course_bigbox .wapper header a:nth-child(2) {
-  flex: 1;
+  margin-top: 30px;
+  float: right;
 }
 
-.course_bigbox .wapper header a:nth-child(3) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.course_bigbox .wapper header a:nth-child(3) .right {
+.course_bigbox .wapper header a:nth-child(2) .right {
   width: 265px;
   height: auto;
   margin-top: 30px;
 }
 
 .course_bigbox .wapper nav {
-  width: 100%;
+  width: 1200px;
   height: 65px;
   background: #A51C30;
   display: flex;
@@ -148,50 +140,41 @@ body {
   width: 100%;
   height: 65px;
   margin: 0 auto;
-  display: flex;
 }
 
 .course_bigbox .wapper nav .list li {
+  width: 240px;
+  display: inline-block;
   line-height: 65px;
-  display: flex;
   float: left;
-  width: 18%;
   justify-content: center;
   align-items: center;
 }
 
-.course_bigbox .wapper nav .list li:nth-child(2n+1) {
-  width: 2%;
+.course_bigbox .wapper nav .list li:hover p {
+  color: #dab96b;
 }
 
-.course_bigbox .wapper nav .list li:first-child {
-  width: .5%;
-}
-
-.course_bigbox .wapper nav .list li:last-child {
-  width: .5%;
-}
-
-.course_bigbox .wapper nav .list li:nth-child(8) {
-  width: 23%;
-}
-
-.course_bigbox .wapper nav .list li a {
-  display: inline-block;
-  color: white;
-  display: flex;
-  flex: 1;
-}
-
-.course_bigbox .wapper nav .list li a p {
-  margin: auto;
-  font-size: 20px;
+.course_bigbox .wapper nav .list li:nth-child(4) p {
+  color: #dab96b;
 }
 
 .course_bigbox .wapper nav .list li img {
   display: inline-block;
   width: 10px;
   height: 10px;
+}
+
+.course_bigbox .wapper nav .list li a {
+  display: inline-block;
+}
+
+.course_bigbox .wapper nav .list li a p {
+  line-height: 65px;
+  padding: 0 64px;
+  color: white;
+  margin: auto;
+  font-size: 20px;
 }
 
 .course_bigbox .banner {
@@ -201,12 +184,13 @@ body {
 
 .course_bigbox .map {
   width: 100%;
-  height: 900px;
+  padding-bottom: 60px;
   background: #fbfbfb;
 }
 
 .course_bigbox .map img {
-  padding-top: 100px;
+  width: 1100px;
+  padding-top: 80px;
   display: block;
   margin: 0 auto;
 }
@@ -218,10 +202,12 @@ body {
   margin: 0 auto;
 }
 
-.course_bigbox .new_ad img {
+.course_bigbox .new_ad .logo_first {
+  width: 300px;
   padding-top: 70px;
   display: block;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .course_bigbox .new_ad .newad_box {
@@ -236,7 +222,7 @@ body {
 
 .course_bigbox .new_ad .newad_box .left h1 {
   position: absolute;
-  top: 115px;
+  top: 45px;
   left: 140px;
   font-size: 36px;
   font-weight: 800;
@@ -245,7 +231,7 @@ body {
 
 .course_bigbox .new_ad .newad_box .left .ad_text {
   position: absolute;
-  top: 230px;
+  top: 160px;
   left: 40px;
 }
 
@@ -263,7 +249,7 @@ body {
 
 .course_bigbox .new_ad .newad_box .right h1 {
   position: absolute;
-  top: 115px;
+  top: 45px;
   left: 140px;
   font-size: 36px;
   font-weight: 800;
@@ -272,7 +258,7 @@ body {
 
 .course_bigbox .new_ad .newad_box .right span {
   position: absolute;
-  top: 132px;
+  top: 60px;
   left: 380px;
   font-size: 20px;
   font-weight: 800;
@@ -281,7 +267,7 @@ body {
 
 .course_bigbox .new_ad .newad_box .right .ad_text {
   position: absolute;
-  top: 230px;
+  top: 160px;
   left: 40px;
 }
 
@@ -768,7 +754,7 @@ body {
 
 .course_bigbox .footer {
   width: 100%;
-  height: 225px;
+  height: 200px;
   background: #A51C30;
 }
 
@@ -776,35 +762,33 @@ body {
   width: 1200px;
   height: auto;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 35px;
 }
 
 .course_bigbox .footer .footer_box .footer_logo {
+  margin-top: 7px;
   float: left;
 }
 
 .course_bigbox .footer .footer_box .footer_tel {
-  margin-top: 30px;
+  margin-top: 35px;
   float: right;
 }
 
 .course_bigbox .footer_bottom {
-  position: relative;
-  width: 100%;
-  height: 100px;
+  width: 370px;
+  height: 40px;
+  margin: auto;
+  margin-top: 16px;
 }
 
 .course_bigbox .footer_bottom p {
   font-size: 24px;
-  text-align: center;
   color: #1d1d1d;
-  font-weight: 500;
-  line-height: 100px;
-  margin-right: 100px;
+  float: left;
 }
 
 .course_bigbox .footer_bottom img {
-  position: absolute;
-  top: 38px;
-  left: 55%;
+  margin-top: 5px;
+  float: right;
 }

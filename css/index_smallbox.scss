@@ -159,7 +159,6 @@
                 }
             }
             .com_title {
-                
                 width: 100%;
                 margin: auto;
                 z-index: 1;
@@ -167,60 +166,58 @@
                 h3 {
                     font-size: 18/$sc+rem;
                     font-weight: 600;
-                    padding: 30/$sc+rem 0 5/$sc+rem 0;
+                    padding: 30/$sc+rem 0 6/$sc+rem 0;
                 }
                 img {
                     display: block;
                     width: 120/$sc+rem;
                     margin: 0 auto;
-                    padding-bottom: 5/$sc+rem;
+                    padding-bottom: 8/$sc+rem;
                 }
                 h4 {
                     display: block;
-                    width: 280/$sc+rem;
+                    width: 200/$sc+rem;
                     margin: 0 auto;
-                    font-size: 10/$sc+rem;
+                    font-size: 8/$sc+rem;
                     text-align: center;
                     font-weight: 300;
                 }
+                .xz {
+                    padding: 20/$sc+rem;
+                    width: 280/$sc+rem;
+                    display: block;
+                    margin: auto;
+                }
                 .com_articale {
-                   
-                    height: 600/$sc+rem;
-                    margin-top: 10/$sc+rem;
+                    box-shadow: 5/$sc+rem 5/$sc+rem 5/$sc+rem #ebebeb;
                     width: 100%;
                     background: #f8f8f8;
-                    .articale_left {
-                        padding: 20/$sc+rem;
-                        padding-bottom: 10/$sc+rem;
-                        
-                        img {
-                            width: 200/$sc+rem;
-                            display: block;
-                            margin: auto;
-                        }
-                    }
-                    .articale_right {
+                    .articale {
+                        padding: 20/$sc+rem 0 50/$sc+rem 0;
                         width: 280/$sc+rem;
-                        margin: auto;
+                        margin: 0 auto;
                         p {
                             text-indent: 2em;
-                            font-size: 10/$sc+rem;
+                            font-size: 12/$sc+rem;
+                            font-weight: 300;
                             margin-bottom: 10/$sc+rem;
-                            line-height: 16/$sc+rem;
+                            line-height: 18/$sc+rem;
                             text-align: justify;
                         }
                         span {
+                            display: block;
+                            margin: 10px 0;
                             a {
                                 float: right;
                                 width: 90/$sc+rem;
-                                height: 24/$sc+rem;
+                                height: 30/$sc+rem;
                                 background: #A51C30;
                                 border-radius: 5/$sc+rem;
                                 text-align: center;
                                 color: white;
                                 font-size: 10/$sc+rem;
                                 font-weight: bold;
-                                line-height: 24/$sc+rem;
+                                line-height: 30/$sc+rem;
                             }
                         }
                     }
@@ -233,19 +230,19 @@
                 h3 {
                     font-size: 18/$sc+rem;
                     font-weight: 600;
-                    padding: 10/$sc+rem 0 5/$sc+rem 0;
+                    padding: 30/$sc+rem 0 6/$sc+rem 0;
                 }
                 img {
                     display: block;
                     width: 120/$sc+rem;
                     margin: 0 auto;
-                    padding-bottom: 5/$sc+rem;
+                    padding-bottom: 8/$sc+rem;
                 }
                 h4 {
                     display: block;
-                    width: 280/$sc+rem;
+                    width: 200/$sc+rem;
                     margin: 0 auto;
-                    font-size: 10/$sc+rem;
+                    font-size: 8/$sc+rem;
                     text-align: center;
                     font-weight: 300;
                 }
@@ -256,18 +253,19 @@
                     li {
                         img {
                             width: 280/$sc+rem;
+                            margin-top: 10/$sc+rem;
                         }
                         &:nth-child(2) {
-                            margin-top: 15/$sc+rem;
+                            margin-top: 30/$sc+rem;
                         }
                         .csr {
                             margin-top: 5/$sc+rem;
                             p {
-                                font-size: 12/$sc+rem;
+                                font-size: 10/$sc+rem;
                                 float: left;
-                                margin-left: 20/$sc+rem;
                             }
                             span.import {
+                                margin-top: -3/$sc+rem;
                                 font-size: 12/$sc+rem;
                                 color: #a51c30;
                                 float: left;
@@ -284,25 +282,25 @@
                 h3 {
                     font-size: 18/$sc+rem;
                     font-weight: 600;
-                    padding: 30/$sc+rem 0 5/$sc+rem 0;
+                    padding: 30/$sc+rem 0 6/$sc+rem 0;
                 }
                 img {
                     display: block;
-                    width: 180/$sc+rem;
+                    width: 170/$sc+rem;
                     margin: 0 auto;
-                    padding-bottom: 5/$sc+rem;
+                    padding-bottom: 8/$sc+rem;
                 }
                 h5 {
                     display: block;
-                    width: 280/$sc+rem;
+                    width: 200/$sc+rem;
                     margin: 0 auto;
-                    font-size: 10/$sc+rem;
+                    font-size: 8/$sc+rem;
                     text-align: center;
                     font-weight: 300;
                 }
                 .chinese_list {
                     text-align: left;
-                    margin-top: 10/$sc+rem;
+                    margin-top: 20/$sc+rem;
                     li {
                         padding-bottom: 30/$sc+rem;
                         margin-bottom: 20/$sc+rem;
@@ -310,33 +308,33 @@
                             width: 280/$sc+rem;
                         }
                         h4 {
-                            font-size: 14/$sc+rem;
-                            margin: 10/$sc+rem 0 8/$sc+rem 20/$sc+rem;
+                            font-size: 16/$sc+rem;
+                            margin: 10/$sc+rem 0 5/$sc+rem 20/$sc+rem;
                             color: #A51C30;
                         }
                         .conten_ads {
                             padding: 0 20px;
                             p {
                                 font-size: 10/$sc+rem;
-                                font-weight: 400;
+                                font-weight: 300;
                                 line-height: 16/$sc+rem;
                                 text-align: justify;
                             }
                         }
                         span {
                             display: block;
-                            margin: 10px 20px;
+                            margin: 10/$sc+rem 0px 18/$sc+rem 20/$sc+rem;
                             a {
                                 float: left;
                                 width: 90/$sc+rem;
-                                height: 24/$sc+rem;
+                                height: 30/$sc+rem;
                                 background: #A51C30;
                                 border-radius: 5/$sc+rem;
                                 text-align: center;
                                 color: white;
                                 font-size: 10/$sc+rem;
                                 font-weight: bold;
-                                line-height: 24/$sc+rem;
+                                line-height: 30/$sc+rem;
                             }
                         }
                     }
@@ -362,13 +360,13 @@
                     display: block;
                     width: 280/$sc+rem;
                     margin: 0 auto;
-                    font-size: 10/$sc+rem;
+                    font-size: 8/$sc+rem;
                     text-align: center;
                     font-weight: 300;
                 }
                 .map {
                     width: 100%;
-                    padding-bottom: 20/$sc+rem;
+                    padding: 10/$sc+rem 0 20/$sc+rem 0;
                 }
             }
             .footer {

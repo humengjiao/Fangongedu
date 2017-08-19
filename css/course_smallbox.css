@@ -51,65 +51,63 @@ body {
 }
 
 .course_smallbox {
-  width: 100%;
+  width: 16rem;
+  margin: auto;
 }
 
 .course_smallbox header .logo {
   float: left;
-  width: 2.5rem;
+  width: 6rem;
   height: auto;
-  margin: 0.5rem 0 0.5rem 0.5rem;
+  margin: 1rem 0 0 0.75rem;
 }
 
 .course_smallbox header .click {
-  width: 1.25rem;
+  width: 0.9rem;
   float: right;
-  margin-top: 1.75rem;
-  margin-right: 0.5rem;
+  margin-top: 1.85rem;
+  margin-right: 0.75rem;
 }
 
 .course_smallbox nav {
   overflow: hidden;
+  margin-top: 0.5rem;
   height: 0;
   width: 100%;
   transition: all .5s;
 }
 
 .course_smallbox nav .hide {
-  height: 10rem;
-  margin: 0.05rem 0.5rem 0 0.5rem;
+  height: 7.75rem;
+  margin: 0 0.35rem;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
-.course_smallbox nav ul li {
+.course_smallbox nav .hide li {
   width: 100%;
-  height: 2rem;
+  height: 1.5rem;
   border-bottom: 0.05rem solid #eee;
 }
 
-.course_smallbox nav ul li:last-child {
+.course_smallbox nav .hide li:last-child {
   border-bottom: none;
 }
 
-.course_smallbox nav ul li a {
-  height: 2rem;
+.course_smallbox nav .hide li a {
+  height: 1.5rem;
   display: block;
   border-radius: 0.25rem;
   color: #A51C30;
-  line-height: 2rem;
+  line-height: 1.5rem;
   text-indent: 2em;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 500;
 }
 
-.course_smallbox nav ul li.cur a {
+.course_smallbox .hide li.cur a {
   background: #A51C30;
   color: white;
-}
-
-.course_smallbox nav ul li a:hover {
-  background: #eee;
 }
 
 .course_smallbox .banner {
@@ -117,13 +115,13 @@ body {
 }
 
 .course_smallbox .map {
-  width: 320px;
+  width: 16rem;
   background: #fbfbfb;
 }
 
 .course_smallbox .map img {
-  width: 280px;
-  padding: 20px 0;
+  width: 13rem;
+  padding: 1rem 0;
   display: block;
   margin: 0 auto;
 }
@@ -135,8 +133,8 @@ body {
 }
 
 .course_smallbox .new_ad .lo_title {
-  width: 160px;
-  padding: 20px 0;
+  width: 8rem;
+  padding: 1rem 0;
   display: block;
   margin: 0 auto;
 }
@@ -153,129 +151,152 @@ body {
 }
 
 .course_smallbox .new_ad .newad_box .left {
+  margin: auto;
+  width: 16rem;
+  height: 7.5rem;
+  background: #A51C30;
   position: relative;
+}
+
+.course_smallbox .new_ad .newad_box .left img {
+  position: absolute;
+  top: 1rem;
+  left: 1.25rem;
+  width: 40px;
 }
 
 .course_smallbox .new_ad .newad_box .left h1 {
   position: absolute;
-  top: 30px;
-  left: 80px;
-  font-size: 18px;
+  top: 1.25rem;
+  left: 3.5rem;
+  font-size: 0.7rem;
   color: white;
 }
 
 .course_smallbox .new_ad .newad_box .left .ad_text {
   position: absolute;
-  top: 75px;
-  left: 20px;
+  top: 3rem;
+  left: 1rem;
 }
 
 .course_smallbox .new_ad .newad_box .left .ad_text p {
   display: block;
   margin: 0 auto;
-  width: 290px;
-  font-size: 12px;
+  width: 15rem;
+  font-size: 0.5rem;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 1rem;
   color: white;
 }
 
 .course_smallbox .new_ad .newad_box .right {
+  margin: auto;
+  width: 16.5rem;
+  height: 7.75rem;
   position: relative;
+}
+
+.course_smallbox .new_ad .newad_box .right img {
+  position: absolute;
+  top: 1rem;
+  left: 1.25rem;
+  width: 43px;
 }
 
 .course_smallbox .new_ad .newad_box .right h1 {
   position: absolute;
-  top: 30px;
-  left: 80px;
-  font-size: 18px;
+  top: 1.4rem;
+  left: 3.6rem;
+  font-size: 0.7rem;
 }
 
 .course_smallbox .new_ad .newad_box .right span {
   position: absolute;
-  top: 35px;
-  left: 200px;
-  font-size: 12px;
+  top: 1.6rem;
+  left: 8.25rem;
+  font-size: 0.5rem;
 }
 
 .course_smallbox .new_ad .newad_box .right .ad_text {
   position: absolute;
-  top: 75px;
-  left: 20px;
+  top: 3rem;
+  left: 1rem;
+  margin-bottom: 2rem;
 }
 
 .course_smallbox .new_ad .newad_box .right .ad_text p {
-  font-weight: 300;
   display: block;
   margin: 0 auto;
-  width: 290px;
-  font-size: 12px;
-  line-height: 24px;
+  width: 15rem;
+  font-size: 0.5rem;
+  font-weight: 300;
+  line-height: 1rem;
 }
 
 .course_smallbox .five_small {
   width: 100%;
-  height: 200px;
+  height: 10rem;
   background: #F8F8F8;
 }
 
 .course_smallbox .five_small h3 {
   font-family: "PingFang SC";
-  font-size: 18px;
-  padding: 30px 0 5px 0;
+  font-size: 0.9rem;
+  padding: 1.5rem 0 0.25rem 0;
   color: #A51C30;
   text-align: center;
 }
 
 .course_smallbox .five_small p {
-  font-size: 8px;
+  font-size: 0.4rem;
   color: #A51C30;
   text-align: center;
 }
 
 .course_smallbox .five_small .five_center {
-  width: 300px;
-  margin-top: 30px;
+  width: 15rem;
+  margin-top: 1.5rem;
   margin: 0 auto;
   display: flex;
 }
 
 .course_smallbox .five_small .five_center li {
-  margin-top: 20px;
+  margin-top: 1rem;
   float: left;
   flex: 1;
 }
 
 .course_smallbox .five_small .five_center li img {
-  width: 50px;
+  width: 2.5rem;
   display: block;
   text-align: center;
-  padding-left: 5px;
-  padding-bottom: 5px;
+  padding-left: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .course_smallbox .five_small .five_center li span {
-  font-size: 10px;
-  padding-left: 7px;
+  font-size: 0.5rem;
+  padding-left: 0.35rem;
   font-weight: 300;
   color: black;
 }
 
 .course_smallbox .five_reason {
-  width: 280px;
+  width: 14rem;
   margin: 0 auto;
 }
 
 .course_smallbox .five_reason .one_reason {
   width: 100%;
-  width: 280px;
+  width: 14rem;
   margin: 0 auto;
 }
 
 .course_smallbox .five_reason .one_reason h1 {
   font-family: "PingFang SC";
-  font-size: 20px;
-  padding: 30px 0 10px 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 1rem 0 0.5rem 0;
   color: #A51C30;
 }
 
@@ -284,143 +305,142 @@ body {
   width: 100%;
   margin: 0 auto;
   float: left;
-  padding-bottom: 30px;
+  padding-bottom: 1rem;
 }
 
 .course_smallbox .five_reason .one_reason .one .one_right {
   float: right;
-  width: 280px;
+  width: 14rem;
 }
 
 .course_smallbox .five_reason .one_reason .one .one_right h3 {
   font-family: "PingFang SC";
-  font-size: 14px;
-  padding: 0 0 10px 0;
+  font-size: 0.7rem;
+  padding: 0 0 0.5rem 0;
   color: #A51C30;
 }
 
 .course_smallbox .five_reason .one_reason .one .one_right p {
-  width: 280px;
+  width: 14rem;
   display: block;
   text-align: justify;
-  font-size: 10px;
+  font-size: 0.5rem;
   font-weight: 300;
-  line-height: 26px;
-  margin-bottom: 20px;
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .course_smallbox .five_reason .one_reason .one .one_right span {
-  width: 100px;
-  height: 35px;
+  width: 4.5rem;
+  height: 1.5rem;
   background: #A51C30;
   display: block;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   position: relative;
 }
 
 .course_smallbox .five_reason .one_reason .one .one_right span img {
-  width: 20px;
+  width: 0.8rem;
   float: left;
   display: inline-block;
-  margin-left: 8px;
-  margin-right: 5px;
-  margin-top: 7px;
+  margin-left: 0.6rem;
+  margin-right: 0.25rem;
+  margin-top: 0.35rem;
 }
 
 .course_smallbox .five_reason .one_reason .one .one_right span p {
   position: absolute;
-  top: 5px;
-  left: 40px;
+  top: 0.25rem;
+  left: 1.9rem;
   float: left;
-  font-size: 12px;
+  font-size: 0.5rem;
   font-weight: 500;
   color: white;
 }
 
-.course_smallbox .five_reason .box_two {
+.course_smallbox .five_reason .two_reason {
   width: 100%;
-}
-
-.course_smallbox .five_reason .box_two .two_reason {
-  width: 100%;
-  width: 280px;
+  width: 14rem;
   margin: 0 auto;
 }
 
-.course_smallbox .five_reason .box_two .two_reason h1 {
+.course_smallbox .five_reason .two_reason h1 {
   font-family: "PingFang SC";
-  font-size: 20px;
-  padding: 30px 0 10px 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 1rem 0 0.5rem 0;
   color: #A51C30;
 }
 
-.course_smallbox .five_reason .box_two .two_reason .two img {
+.course_smallbox .five_reason .two_reason .two img {
   display: block;
   width: 100%;
   margin: 0 auto;
   float: left;
-  padding-bottom: 30px;
+  padding-bottom: 1rem;
 }
 
-.course_smallbox .five_reason .box_two .two_reason .two .one_right {
+.course_smallbox .five_reason .two_reason .two .one_right {
   float: right;
-  width: 280px;
+  width: 14rem;
 }
 
-.course_smallbox .five_reason .box_two .two_reason .two .one_right h3 {
+.course_smallbox .five_reason .two_reason .two .one_right h3 {
   font-family: "PingFang SC";
-  font-size: 14px;
-  padding: 0 0 10px 0;
+  font-size: 0.7rem;
+  padding: 0 0 0.5rem 0;
   color: #A51C30;
 }
 
-.course_smallbox .five_reason .box_two .two_reason .two .one_right p {
-  width: 280px;
+.course_smallbox .five_reason .two_reason .two .one_right p {
+  width: 14rem;
   display: block;
   text-align: justify;
-  font-size: 10px;
+  font-size: 0.5rem;
   font-weight: 300;
-  line-height: 26px;
-  margin-bottom: 20px;
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.course_smallbox .five_reason .box_two .two_reason .two .one_right span {
-  width: 100px;
-  height: 35px;
+.course_smallbox .five_reason .two_reason .two .one_right span {
+  width: 4.5rem;
+  height: 1.5rem;
   background: #A51C30;
   display: block;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   position: relative;
 }
 
-.course_smallbox .five_reason .box_two .two_reason .two .one_right span img {
-  width: 20px;
+.course_smallbox .five_reason .two_reason .two .one_right span img {
+  width: 0.8rem;
   float: left;
   display: inline-block;
-  margin-left: 8px;
-  margin-right: 5px;
-  margin-top: 7px;
+  margin-left: 0.6rem;
+  margin-right: 0.25rem;
+  margin-top: 0.35rem;
 }
 
-.course_smallbox .five_reason .box_two .two_reason .two .one_right span p {
+.course_smallbox .five_reason .two_reason .two .one_right span p {
   position: absolute;
-  top: 5px;
-  left: 40px;
+  top: 0.25rem;
+  left: 1.9rem;
   float: left;
-  font-size: 12px;
+  font-size: 0.5rem;
   font-weight: 500;
   color: white;
 }
 
 .course_smallbox .five_reason .three_reason {
   width: 100%;
-  width: 280px;
+  width: 14rem;
   margin: 0 auto;
 }
 
 .course_smallbox .five_reason .three_reason h1 {
-  font-size: 20px;
-  padding: 30px 0 10px 0;
+  font-family: "PingFang SC";
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 1rem 0 0.5rem 0;
   color: #A51C30;
 }
 
@@ -429,142 +449,142 @@ body {
   width: 100%;
   margin: 0 auto;
   float: left;
-  padding-bottom: 30px;
+  padding-bottom: 1rem;
 }
 
 .course_smallbox .five_reason .three_reason .three .one_right {
   float: right;
-  width: 280px;
+  width: 14rem;
 }
 
 .course_smallbox .five_reason .three_reason .three .one_right h3 {
   font-family: "PingFang SC";
-  font-size: 14px;
-  padding: 0 0 10px 0;
+  font-size: 0.7rem;
+  padding: 0 0 0.5rem 0;
   color: #A51C30;
 }
 
 .course_smallbox .five_reason .three_reason .three .one_right p {
-  width: 280px;
+  width: 14rem;
   display: block;
   text-align: justify;
-  font-size: 10px;
+  font-size: 0.5rem;
   font-weight: 300;
-  line-height: 26px;
-  margin-bottom: 20px;
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .course_smallbox .five_reason .three_reason .three .one_right span {
-  width: 100px;
-  height: 35px;
+  width: 4.5rem;
+  height: 1.5rem;
   background: #A51C30;
   display: block;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   position: relative;
 }
 
 .course_smallbox .five_reason .three_reason .three .one_right span img {
-  width: 20px;
+  width: 0.8rem;
   float: left;
   display: inline-block;
-  margin-left: 8px;
-  margin-right: 5px;
-  margin-top: 7px;
+  margin-left: 0.6rem;
+  margin-right: 0.25rem;
+  margin-top: 0.35rem;
 }
 
 .course_smallbox .five_reason .three_reason .three .one_right span p {
   position: absolute;
-  top: 5px;
-  left: 40px;
+  top: 0.25rem;
+  left: 1.9rem;
   float: left;
-  font-size: 12px;
+  font-size: 0.5rem;
   font-weight: 500;
   color: white;
 }
 
-.course_smallbox .five_reason .box_four {
+.course_smallbox .five_reason .four_reason {
   width: 100%;
-}
-
-.course_smallbox .five_reason .box_four .four_reason {
-  width: 100%;
-  width: 280px;
+  width: 14rem;
   margin: 0 auto;
 }
 
-.course_smallbox .five_reason .box_four .four_reason h1 {
-  font-size: 20px;
-  padding: 30px 0 10px 0;
+.course_smallbox .five_reason .four_reason h1 {
+  font-family: "PingFang SC";
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 1rem 0 0.5rem 0;
   color: #A51C30;
 }
 
-.course_smallbox .five_reason .box_four .four_reason .four img {
+.course_smallbox .five_reason .four_reason .four img {
   display: block;
   width: 100%;
   margin: 0 auto;
   float: left;
-  padding-bottom: 30px;
+  padding-bottom: 1rem;
 }
 
-.course_smallbox .five_reason .box_four .four_reason .four .one_right {
+.course_smallbox .five_reason .four_reason .four .one_right {
   float: right;
-  width: 280px;
+  width: 14rem;
 }
 
-.course_smallbox .five_reason .box_four .four_reason .four .one_right h3 {
+.course_smallbox .five_reason .four_reason .four .one_right h3 {
   font-family: "PingFang SC";
-  font-size: 14px;
-  padding: 0 0 10px 0;
+  font-size: 0.7rem;
+  padding: 0 0 0.5rem 0;
   color: #A51C30;
 }
 
-.course_smallbox .five_reason .box_four .four_reason .four .one_right p {
-  width: 280px;
+.course_smallbox .five_reason .four_reason .four .one_right p {
+  width: 14rem;
   display: block;
   text-align: justify;
-  font-size: 10px;
+  font-size: 0.5rem;
   font-weight: 300;
-  line-height: 26px;
-  margin-bottom: 20px;
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.course_smallbox .five_reason .box_four .four_reason .four .one_right span {
-  width: 100px;
-  height: 35px;
+.course_smallbox .five_reason .four_reason .four .one_right span {
+  width: 4.5rem;
+  height: 1.5rem;
   background: #A51C30;
   display: block;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   position: relative;
 }
 
-.course_smallbox .five_reason .box_four .four_reason .four .one_right span img {
-  width: 20px;
+.course_smallbox .five_reason .four_reason .four .one_right span img {
+  width: 0.8rem;
   float: left;
   display: inline-block;
-  margin-left: 8px;
-  margin-right: 5px;
-  margin-top: 7px;
+  margin-left: 0.6rem;
+  margin-right: 0.25rem;
+  margin-top: 0.35rem;
 }
 
-.course_smallbox .five_reason .box_four .four_reason .four .one_right span p {
+.course_smallbox .five_reason .four_reason .four .one_right span p {
   position: absolute;
-  top: 5px;
-  left: 40px;
+  top: 0.25rem;
+  left: 1.9rem;
   float: left;
-  font-size: 12px;
+  font-size: 0.5rem;
   font-weight: 500;
   color: white;
 }
 
 .course_smallbox .five_reason .five_reason {
   width: 100%;
-  width: 280px;
+  width: 14rem;
   margin: 0 auto;
 }
 
 .course_smallbox .five_reason .five_reason h1 {
-  font-size: 20px;
-  padding: 30px 0 10px 0;
+  font-family: "PingFang SC";
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 1rem 0 0.5rem 0;
   color: #A51C30;
 }
 
@@ -573,164 +593,162 @@ body {
   width: 100%;
   margin: 0 auto;
   float: left;
-  padding-bottom: 30px;
+  padding-bottom: 1rem;
 }
 
 .course_smallbox .five_reason .five_reason .five .one_right {
   float: right;
-  width: 280px;
+  width: 14rem;
 }
 
 .course_smallbox .five_reason .five_reason .five .one_right h3 {
   font-family: "PingFang SC";
-  font-size: 14px;
-  padding: 0 0 10px 0;
+  font-size: 0.7rem;
+  padding: 0 0 0.5rem 0;
   color: #A51C30;
 }
 
 .course_smallbox .five_reason .five_reason .five .one_right p {
-  width: 280px;
+  width: 14rem;
   display: block;
   text-align: justify;
-  font-size: 10px;
+  font-size: 0.5rem;
   font-weight: 300;
-  line-height: 26px;
-  margin-bottom: 20px;
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .course_smallbox .five_reason .five_reason .five .one_right span {
-  width: 100px;
-  height: 35px;
+  width: 4.5rem;
+  height: 1.5rem;
   background: #A51C30;
   display: block;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   position: relative;
 }
 
 .course_smallbox .five_reason .five_reason .five .one_right span img {
-  width: 20px;
+  width: 0.8rem;
   float: left;
   display: inline-block;
-  margin-left: 8px;
-  margin-right: 5px;
-  margin-top: 7px;
+  margin-left: 0.6rem;
+  margin-right: 0.25rem;
+  margin-top: 0.35rem;
 }
 
 .course_smallbox .five_reason .five_reason .five .one_right span p {
   position: absolute;
-  top: 5px;
-  left: 40px;
+  top: 0.25rem;
+  left: 1.9rem;
   float: left;
-  font-size: 12px;
+  font-size: 0.5rem;
   font-weight: 500;
   color: white;
 }
 
 .course_smallbox .curriculum {
-  margin-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
   width: 100%;
   background: #fbfbfb;
 }
 
 .course_smallbox .curriculum h3 {
   text-align: center;
-  font-size: 18px;
-  padding: 20px 0 5px 0;
+  font-size: 0.9rem;
+  padding: 1rem 0 0.05rem 0;
   color: #A51C30;
 }
 
 .course_smallbox .curriculum p {
   margin: 0 auto;
   text-align: center;
-  font-size: 10px;
+  font-size: 0.5rem;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 0.5rem;
 }
 
 .course_smallbox .curriculum h5 {
   margin: 0 auto;
   display: block;
-  width: 280px;
+  width: 13rem;
   text-align: center;
-  font-size: 10px;
-  margin-bottom: 5px;
+  font-size: 0.4rem;
   font-weight: 300;
-  line-height: 18px;
+  line-height: 0.7rem;
 }
 
 .course_smallbox .section {
-  width: 280px;
+  width: 14rem;
   margin: 0 auto;
 }
 
 .course_smallbox .section h3 {
   text-align: center;
-  font-size: 14px;
-  padding: 20px 0 10px 0;
+  font-size: 0.7rem;
+  padding: 1rem 0 0.5rem 0;
   color: #A51C30;
 }
 
 .course_smallbox .section img {
-  width: 280px;
+  width: 14rem;
   display: block;
   margin: 0 auto;
 }
 
 .course_smallbox .section_one {
-  width: 280px;
+  width: 14rem;
   margin: 0 auto;
 }
 
 .course_smallbox .section_one h3 {
   text-align: center;
-  font-size: 14px;
-  padding: 20px 0 10px 0;
+  font-size: 0.7rem;
+  padding: 1rem 0 0.5rem 0;
   color: #A51C30;
 }
 
 .course_smallbox .section_one img {
-  width: 280px;
+  width: 14rem;
   display: block;
   margin: 0 auto;
 }
 
 .course_smallbox .title_one {
-  width: 280px;
+  width: 14rem;
   margin: 0 auto;
 }
 
 .course_smallbox .title_one img {
-  width: 280px;
+  width: 14rem;
   display: block;
-  margin: 25px auto;
+  margin: 1.25rem auto;
 }
 
 .course_smallbox .footer {
-  margin-top: 2.5rem;
   width: 100%;
-  height: 6.5rem;
+  height: 4rem;
   background: #A51C30;
 }
 
 .course_smallbox .footer .footer_logo {
-  padding-top: 1rem;
+  padding-top: 0.7rem;
 }
 
 .course_smallbox .footer .footer_logo img {
   display: block;
-  width: 15rem;
+  width: 10rem;
   margin: 0 auto;
 }
 
 .course_smallbox .footer_bottom {
   width: 100%;
-  height: 2.5rem;
-  padding-top: 1rem;
+  height: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 .course_smallbox .footer_bottom img {
-  width: 11.5rem;
+  width: 9rem;
   display: block;
   margin: 0 auto;
 }

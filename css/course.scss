@@ -72,7 +72,7 @@ body {
         z-index: -5;
     }
     .wapper {
-        width: 62.5%;
+        width: 1200px;
         height: auto;
         margin: auto;
         .header_top {
@@ -94,27 +94,20 @@ body {
             }
         }
         header {
-            width: 100%;
+            width: 1200px;
             height: 120px;
-            display: flex;
+            margin: auto;
             a:nth-child(1) {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
+                margin-top: 12px;
+                float: left;
                 .left {
                     width: 98px;
                     height: auto;
                 }
             }
             a:nth-child(2) {
-                flex: 1;
-            }
-            a:nth-child(3) {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
+                margin-top: 30px;
+                float: right;
                 .right {
                     width: 265px;
                     height: auto;
@@ -123,7 +116,7 @@ body {
             }
         }
         nav {
-            width: 100%;
+            width: 1200px;
             height: 65px;
             background: #A51C30;
             display: flex;
@@ -131,40 +124,35 @@ body {
                 width: 100%;
                 height: 65px;
                 margin: 0 auto;
-                display: flex;
                 li {
+                    width: 240px;
+                    display: inline-block;
                     line-height: 65px;
-                    display: flex;
                     float: left;
-                    width: 18%;
                     justify-content: center;
                     align-items: center;
-                    &:nth-child(2n+1) {
-                        width: 2%;
+                    &:hover p {
+                        color: #dab96b;
                     }
-                    &:first-child {
-                        width: .5%;
-                    }
-                    &:last-child {
-                        width: .5%;
-                    }
-                    &:nth-child(8) {
-                        width: 23%;
-                    }
-                    a {
-                        display: inline-block;
-                        color: white;
-                        display: flex;
-                        flex: 1;
+                    &:nth-child(4) {
                         p {
-                            margin: auto;
-                            font-size: 20px;
+                            color: #dab96b;
                         }
                     }
                     img {
                         display: inline-block;
                         width: 10px;
                         height: 10px;
+                    }
+                    a {
+                        display: inline-block;
+                        p {
+                            line-height: 65px;
+                            padding: 0 64px;
+                            color: white;
+                            margin: auto;
+                            font-size: 20px;
+                        }
                     }
                 }
             }
@@ -176,10 +164,11 @@ body {
     }
     .map {
         width: 100%;
-        height: 900px;
+        padding-bottom: 60px;
         background: #fbfbfb;
         img {
-            padding-top: 100px;
+            width: 1100px;
+            padding-top: 80px;
             display: block;
             margin: 0 auto;
         }
@@ -189,10 +178,12 @@ body {
         height: 700px;
         display: block;
         margin: 0 auto;
-        img {
+        .logo_first {
+            width: 300px;
             padding-top: 70px;
             display: block;
             margin: 0 auto;
+            margin-bottom: 50px;
         }
         .newad_box {
             width: 1200px;
@@ -202,7 +193,7 @@ body {
                 position: relative;
                 h1 {
                     position: absolute;
-                    top: 115px;
+                    top: 45px;
                     left: 140px;
                     font-size: 36px;
                     font-weight: 800;
@@ -210,7 +201,7 @@ body {
                 }
                 .ad_text {
                     position: absolute;
-                    top: 230px;
+                    top: 160px;
                     left: 40px;
                     p {
                         font-size: 18px;
@@ -225,7 +216,7 @@ body {
                 position: relative;
                 h1 {
                     position: absolute;
-                    top: 115px;
+                    top: 45px;
                     left: 140px;
                     font-size: 36px;
                     font-weight: 800;
@@ -233,7 +224,7 @@ body {
                 }
                 span {
                     position: absolute;
-                    top: 132px;
+                    top: 60px;
                     left: 380px;
                     font-size: 20px;
                     font-weight: 800;
@@ -241,7 +232,7 @@ body {
                 }
                 .ad_text {
                     position: absolute;
-                    top: 230px;
+                    top: 160px;
                     left: 40px;
                     p {
                         font-size: 18px;
@@ -298,7 +289,6 @@ body {
     .five_reason {
         width: 100%;
         margin: 0 auto;
-      
         .one_reason {
             width: 100%;
             width: 1200px;
@@ -359,82 +349,75 @@ body {
                 }
             }
         }
-        
-        
-       .box_two{
-           width: 100%;
-           background: #fbfbfb;
-           .two_reason {
+        .box_two {
             width: 100%;
-            width: 1200px;
-            margin: 0 auto;
-            h1 {
-                font-family: "PingFang SC";
-                font-size: 30px;
-                font-weight: 500;
-                padding: 35px 0 60px 0;
-                color: #A51C30;
-            }
-            .two {
-                img {
-                    float: left;
-                    padding-bottom: 70px;
+            background: #fbfbfb;
+            .two_reason {
+                width: 100%;
+                width: 1200px;
+                margin: 0 auto;
+                h1 {
+                    font-family: "PingFang SC";
+                    font-size: 30px;
+                    font-weight: 500;
+                    padding: 35px 0 60px 0;
+                    color: #A51C30;
                 }
-                .one_right {
-                    float: right;
-                    width: 680px;
-                    h3 {
-                        font-family: "PingFang SC";
-                        font-size: 30px;
-                        font-weight: 800;
-                        padding: 0 0 20px 0;
-                        color: #A51C30;
+                .two {
+                    img {
+                        float: left;
+                        padding-bottom: 70px;
                     }
-                    p {
+                    .one_right {
+                        float: right;
                         width: 680px;
-                        display: block;
-                        text-align: justify;
-                        font-size: 20px;
-                        font-weight: 300;
-                        line-height: 46px;
-                        margin-bottom: 80px;
-                    }
-                    span {
-                        width: 175px;
-                        height: 45px;
-                        background: #A51C30;
-                        display: block;
-                        border-radius: 5px;
-                        img {
-                            float: left;
-                            display: inline-block;
-                            margin-left: 30px;
-                            margin-right: 10px;
-                            margin-top: 4px;
+                        h3 {
+                            font-family: "PingFang SC";
+                            font-size: 30px;
+                            font-weight: 800;
+                            padding: 0 0 20px 0;
+                            color: #A51C30;
                         }
                         p {
-                            display: inline-block;
-                            width: 80px;
-                            float: left;
-                            font-size: 18px;
+                            width: 680px;
+                            display: block;
+                            text-align: justify;
+                            font-size: 20px;
                             font-weight: 300;
-                            color: white;
+                            line-height: 46px;
+                            margin-bottom: 80px;
+                        }
+                        span {
+                            width: 175px;
+                            height: 45px;
+                            background: #A51C30;
+                            display: block;
+                            border-radius: 5px;
+                            img {
+                                float: left;
+                                display: inline-block;
+                                margin-left: 30px;
+                                margin-right: 10px;
+                                margin-top: 4px;
+                            }
+                            p {
+                                display: inline-block;
+                                width: 80px;
+                                float: left;
+                                font-size: 18px;
+                                font-weight: 300;
+                                color: white;
+                            }
                         }
                     }
                 }
             }
         }
-       } 
-        
-        
-        
-        
         .three_reason {
             width: 100%;
             width: 1200px;
             margin: 0 auto;
             h1 {
-               
                 font-size: 30px;
                 font-weight: 500;
                 padding: 120px 0 60px 0;
@@ -489,78 +472,74 @@ body {
                 }
             }
         }
-        
-        .box_four{
+        .box_four {
             width: 100%;
             background: #fbfbfb;
             .four_reason {
-            width: 100%;
-            width: 1200px;
-            margin: 0 auto;
-            h1 {               
-                font-size: 30px;
-                font-weight: 500;
-                padding: 35px 0 60px 0;
-                color: #A51C30;
-            }
-            .four {
-                img {
-                    float: left;
-                    padding-bottom: 70px;
+                width: 100%;
+                width: 1200px;
+                margin: 0 auto;
+                h1 {
+                    font-size: 30px;
+                    font-weight: 500;
+                    padding: 35px 0 60px 0;
+                    color: #A51C30;
                 }
-                .one_right {
-                    float: right;
-                    width: 680px;
-                    h3 {
-                        font-family: "PingFang SC";
-                        font-size: 30px;
-                        font-weight: 800;
-                        padding: 0 0 20px 0;
-                        color: #A51C30;
+                .four {
+                    img {
+                        float: left;
+                        padding-bottom: 70px;
                     }
-                    p {
+                    .one_right {
+                        float: right;
                         width: 680px;
-                        display: block;
-                        text-align: justify;
-                        font-size: 20px;
-                        font-weight: 300;
-                        line-height: 46px;
-                        margin-bottom: 40px;
-                    }
-                    span {
-                        width: 175px;
-                        height: 45px;
-                        background: #A51C30;
-                        display: block;
-                        border-radius: 5px;
-                        img {
-                            float: left;
-                            display: inline-block;
-                            margin-left: 30px;
-                            margin-right: 10px;
-                            margin-top: 9px;
+                        h3 {
+                            font-family: "PingFang SC";
+                            font-size: 30px;
+                            font-weight: 800;
+                            padding: 0 0 20px 0;
+                            color: #A51C30;
                         }
                         p {
-                            display: inline-block;
-                            width: 80px;
-                            float: left;
-                            font-size: 18px;
+                            width: 680px;
+                            display: block;
+                            text-align: justify;
+                            font-size: 20px;
                             font-weight: 300;
-                            color: white;
+                            line-height: 46px;
+                            margin-bottom: 40px;
+                        }
+                        span {
+                            width: 175px;
+                            height: 45px;
+                            background: #A51C30;
+                            display: block;
+                            border-radius: 5px;
+                            img {
+                                float: left;
+                                display: inline-block;
+                                margin-left: 30px;
+                                margin-right: 10px;
+                                margin-top: 9px;
+                            }
+                            p {
+                                display: inline-block;
+                                width: 80px;
+                                float: left;
+                                font-size: 18px;
+                                font-weight: 300;
+                                color: white;
+                            }
                         }
                     }
                 }
             }
         }
-        
-        }
-        
         .five_reason {
             width: 100%;
             width: 1200px;
             margin: 0 auto;
             h1 {
-               
                 font-size: 30px;
                 font-weight: 500;
                 padding: 120px 0 60px 0;
@@ -614,14 +593,13 @@ body {
                     }
                 }
             }
-        }               
+        }
     }
-    
-    .curriculum{
-         width: 100%;
-         height: 400px;
-         background: #fbfbfb;
-          h3 {
+    .curriculum {
+        width: 100%;
+        height: 400px;
+        background: #fbfbfb;
+        h3 {
             font-family: "PingFang SC";
             font-size: 36px;
             font-weight: 800;
@@ -633,24 +611,22 @@ body {
             font-size: 20px;
             color: #A51C30;
             text-align: center;
-             font-weight: 300;
-           margin-bottom: 30px; 
+            font-weight: 300;
+            margin-bottom: 30px;
         }
-        h5{
-             font-family: "PingFang SC";
+        h5 {
+            font-family: "PingFang SC";
             font-size: 18px;
             font-weight: 500;
-           margin-bottom: 15px;       
+            margin-bottom: 15px;
             text-align: center;
-             font-weight: 300;
-            
+            font-weight: 300;
         }
     }
-    
-    .section{
-         width: 100%;
-         height: 1100px;
-         h3 {
+    .section {
+        width: 100%;
+        height: 1100px;
+        h3 {
             font-family: "PingFang SC";
             font-size: 30px;
             font-weight: 500;
@@ -658,15 +634,14 @@ body {
             color: #A51C30;
             text-align: center;
         }
-        img{
+        img {
             display: block;
             margin: 0 auto;
         }
     }
-     .section_one{
-         width: 100%;
-        
-         h3 {
+    .section_one {
+        width: 100%;
+        h3 {
             font-family: "PingFang SC";
             font-size: 30px;
             font-weight: 500;
@@ -674,56 +649,50 @@ body {
             color: #A51C30;
             text-align: center;
         }
-        img{
+        img {
             display: block;
             margin: 0 auto;
-            
         }
     }
-    
-    .title_one{
+    .title_one {
         width: 100%;
-        img{
+        img {
             display: block;
             margin: 125px auto;
         }
     }
-    
-   
-    .footer {
+     .footer {
         width: 100%;
-        height: 225px;
+        height: 200px;
         background: #A51C30;
         .footer_box {
             width: 1200px;
             height: auto;
             margin: 0 auto;
-            padding-top: 50px;
+            padding-top: 35px;
             .footer_logo {
+                margin-top: 7px;
                 float: left;
             }
             .footer_tel {
-                margin-top: 30px;
+                margin-top: 35px;
                 float: right;
             }
         }
     }
-    .footer_bottom {
-        position: relative;
-        width: 100%;
-        height: 100px;
+    .footer_bottom {     
+        width: 370px;
+        height: 40px;
+        margin: auto;
+         margin-top: 16px;
         p {
             font-size: 24px;
-            text-align: center;
             color: #1d1d1d;
-            font-weight: 500;
-            line-height: 100px;
-            margin-right: 100px;
+            float: left;
         }
         img {
-            position: absolute;
-            top: 38px;
-            left: 55%;
+            margin-top: 5px;
+            float: right;
         }
     }
 }

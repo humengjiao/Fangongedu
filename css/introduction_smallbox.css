@@ -51,65 +51,63 @@ body {
 }
 
 .contrduction_smallbox {
-  width: 100%;
+  width: 16rem;
+  margin: auto;
 }
 
 .contrduction_smallbox header .logo {
   float: left;
-  width: 2.5rem;
+  width: 6rem;
   height: auto;
-  margin: 0.5rem 0 0.5rem 0.5rem;
+  margin: 1rem 0 0 0.75rem;
 }
 
 .contrduction_smallbox header .click {
-  width: 1.25rem;
+  width: 0.9rem;
   float: right;
-  margin-top: 1.75rem;
-  margin-right: 0.5rem;
+  margin-top: 1.85rem;
+  margin-right: 0.75rem;
 }
 
 .contrduction_smallbox nav {
   overflow: hidden;
+  margin-top: 10px;
   height: 0;
   width: 100%;
   transition: all .5s;
 }
 
 .contrduction_smallbox nav .hide {
-  height: 10rem;
-  margin: 0.05rem 0.5rem 0 0.5rem;
+  height: 7.75rem;
+  margin: 0 0.35rem;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
-.contrduction_smallbox nav ul li {
+.contrduction_smallbox nav .hide li {
   width: 100%;
-  height: 2rem;
+  height: 1.5rem;
   border-bottom: 0.05rem solid #eee;
 }
 
-.contrduction_smallbox nav ul li:last-child {
+.contrduction_smallbox nav .hide li:last-child {
   border-bottom: none;
 }
 
-.contrduction_smallbox nav ul li a {
-  height: 2rem;
+.contrduction_smallbox nav .hide li a {
+  height: 1.5rem;
   display: block;
   border-radius: 0.25rem;
   color: #A51C30;
-  line-height: 2rem;
+  line-height: 1.5rem;
   text-indent: 2em;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 500;
 }
 
-.contrduction_smallbox nav ul li.cur a {
+.contrduction_smallbox .hide li.cur a {
   background: #A51C30;
   color: white;
-}
-
-.contrduction_smallbox nav ul li a:hover {
-  background: #eee;
 }
 
 .contrduction_smallbox .banner {
@@ -119,57 +117,46 @@ body {
 .contrduction_smallbox .com_title {
   width: 100%;
   margin: auto;
-  z-index: 999;
   text-align: center;
 }
 
 .contrduction_smallbox .com_title h3 {
-  color: #A51C30;
-  font-size: 1rem;
-  padding: 1rem 0 0.5rem 0;
+  font-size: 0.9rem;
+  padding: 1.5rem 0 0.2rem 0;
 }
 
 .contrduction_smallbox .com_title h4 {
-  display: block;
   width: 14rem;
-  margin: 0 auto;
-  font-size: 0.6rem;
-  text-align: center;
+  font-size: 0.5rem;
   font-weight: 300;
-  color: #A51C30;
+  margin: auto;
 }
 
-.contrduction_smallbox .com_title .com_articale {
-  box-shadow: 0.25rem 0.25rem 0.25rem #ebebeb;
-  margin-top: 1rem;
-  width: 100%;
-  background: #f8f8f8;
-}
-
-.contrduction_smallbox .com_title .com_articale .articale_left {
+.contrduction_smallbox .com_title img {
   padding: 1rem;
-  padding-bottom: 0;
-}
-
-.contrduction_smallbox .com_title .com_articale .articale_left img {
-  width: 11.5rem;
+  width: 14rem;
   display: block;
   margin: auto;
 }
 
-.contrduction_smallbox .com_title .com_articale .articale_right {
-  padding-top: 1rem;
+.contrduction_smallbox .com_title .com_articale {
+  box-shadow: 0.25rem 0.25rem 0.25rem #ebebeb;
+  width: 100%;
+  background: #f8f8f8;
+}
+
+.contrduction_smallbox .com_title .com_articale .articale {
+  padding: 1rem 0;
   width: 14rem;
   margin: 0 auto;
 }
 
-.contrduction_smallbox .com_title .com_articale .articale_right p {
+.contrduction_smallbox .com_title .com_articale .articale p {
   text-indent: 2em;
-  font-size: 0.7rem;
-  color: #666666;
+  font-size: 0.6rem;
   font-weight: 300;
-  margin-bottom: 0.4rem;
-  line-height: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 0.9rem;
   text-align: justify;
 }
 
@@ -180,21 +167,19 @@ body {
 }
 
 .contrduction_smallbox .map_title h4 {
-  padding: 1rem 0 0.25rem 0;
-  font-size: 1rem;
+  padding: 1.5rem 0 0.2rem 0;
+  font-size: 0.7rem;
   text-align: center;
-  color: #A51C30;
 }
 
 .contrduction_smallbox .map_title h1 {
-  padding-bottom: 0.75rem;
-  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.5rem;
   text-align: center;
-  color: #A51C30;
 }
 
 .contrduction_smallbox .map_title .map_roat {
-  padding: 0.5rem 0 0.5rem 0;
+  padding: 0.25rem 0 0.5rem 0;
   width: 14rem;
   display: block;
   margin: 0 auto;
@@ -207,51 +192,59 @@ body {
 
 .contrduction_smallbox .jianjie h3 {
   text-align: center;
-  color: #A51C30;
-  font-size: 1rem;
-  padding: 1rem 0 0.5rem 0;
+  font-size: 0.9rem;
+  padding: 1.5rem 0 0.5rem 0;
 }
 
 .contrduction_smallbox .jianjie p {
   text-indent: 2em;
-  font-size: 0.7rem;
-  color: #666666;
+  font-size: 0.6rem;
   font-weight: 300;
-  margin-bottom: 0.4rem;
-  line-height: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 0.9rem;
   text-align: justify;
 }
 
 .contrduction_smallbox .wenhua {
-  width: 100%;
+  width: 15rem;
   margin: 0 auto;
 }
 
 .contrduction_smallbox .wenhua h3 {
   text-align: center;
-  color: #A51C30;
-  font-size: 1rem;
-  padding: 1rem 0 0.5rem 0;
+  font-size: 0.9rem;
+  padding: 1.5rem 0 0.2rem 0;
 }
 
 .contrduction_smallbox .wenhua .logo_mean {
   width: 15rem;
   display: block;
   margin: 0 auto;
-  padding-bottom: 0.5rem;
+}
+
+.contrduction_smallbox .wenhua .three_mean {
+  display: block;
+  width: 13rem;
+  margin: 0.5rem auto;
 }
 
 .contrduction_smallbox .wenhua .wenhua_bottom {
   width: 14rem;
   display: block;
   margin: 0 auto;
+  padding-top: 0.4rem;
 }
 
 .contrduction_smallbox .wenhua .wenhua_bottom li {
-  font-size: 14px;
+  font-size: 0.6rem;
   text-align: justify;
-  margin: 5px 0;
-  font-weight: 300;
+  text-align: center;
+}
+
+.contrduction_smallbox .wenhua .wenhua_bottom li i {
+  font-style: normal;
+  font-size: 0.75rem;
+  color: #A51C30;
 }
 
 .contrduction_smallbox .wenhua p {
@@ -264,12 +257,6 @@ body {
   text-indent: 2em;
 }
 
-.contrduction_smallbox .wenhua .three_mean {
-  display: block;
-  width: 13rem;
-  margin: 1rem auto;
-}
-
 .contrduction_smallbox .zhichi {
   width: 14rem;
   margin: 0 auto;
@@ -277,25 +264,23 @@ body {
 
 .contrduction_smallbox .zhichi h3 {
   text-align: center;
-  color: #A51C30;
-  font-size: 1rem;
-  padding: 1rem 0 0.5rem 0;
+  font-size: 0.9rem;
+  padding: 2rem 0 0.4rem 0;
 }
 
 .contrduction_smallbox .zhichi p {
   text-indent: 2em;
-  font-size: 0.7rem;
-  color: #666666;
+  font-size: 0.6rem;
   font-weight: 300;
-  margin-bottom: 0.4rem;
-  line-height: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 0.9rem;
   text-align: justify;
 }
 
 .contrduction_smallbox .zhichi .qianming {
   margin-top: -0.5rem;
   position: relative;
-  width: 10rem;
+  width: 9rem;
   float: right;
 }
 
@@ -305,15 +290,14 @@ body {
   left: 0;
   line-height: 2rem;
   font-weight: 300;
-  font-size: 0.7rem;
-  color: #666666;
+  font-size: 0.6rem;
 }
 
 .contrduction_smallbox .zhichi .qianming img {
   position: absolute;
-  top: 0;
-  left: 7.5rem;
-  width: 2rem;
+  top: 0.25rem;
+  left: 6.5rem;
+  width: 1.75rem;
   margin-left: 0.5rem;
 }
 
@@ -331,9 +315,8 @@ body {
 
 .contrduction_smallbox .news .news_box h3 {
   text-align: center;
-  color: #A51C30;
-  font-size: 1rem;
-  padding: 1rem 0;
+  font-size: 0.9rem;
+  padding: 2rem 0 0.75rem 0;
 }
 
 .contrduction_smallbox .news .news_box .news_img {
@@ -349,21 +332,21 @@ body {
 
 .contrduction_smallbox .news .news_box .news_right .lines img {
   position: absolute;
-  top: 0.35rem;
+  top: 0.1rem;
   left: 0;
   margin-left: 0.25rem;
-  width: 0.8rem;
+  width: 0.75rem;
   display: block;
   float: left;
   display: inline-block;
 }
 
-.contrduction_smallbox .news .news_box .news_right .lines h5 {
+.contrduction_smallbox .news .news_box .news_right .lines h5 a {
   width: 12.5rem;
   float: right;
   font-family: "PingFang SC";
-  font-size: 0.8rem;
-  line-height: 1.5rem;
+  font-size: 0.6rem;
+  line-height: 1rem;
   display: inline-block;
   margin-left: 0.5rem;
   color: #A51C30;
@@ -371,23 +354,23 @@ body {
 
 .contrduction_smallbox .news .news_box .news_right .lines p {
   position: absolute;
-  top: 1.4rem;
-  left: 4rem;
+  top: 0.75rem;
+  left: 3.4rem;
   float: left;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 300;
   display: inline-block;
-  margin-top: 0.15rem;
+  margin-top: 0.4rem;
   margin-left: 0.4rem;
 }
 
 .contrduction_smallbox .news .news_box .news_right p {
-  font-size: 0.7rem;
-  font-weight: 300;
-  display: inline-block;
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
   text-indent: 2em;
-  line-height: 1.3rem;
+  font-size: 0.6rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  line-height: 1rem;
   text-align: justify;
 }
 
@@ -398,21 +381,22 @@ body {
 
 .contrduction_smallbox .news .news_box .news_bottom img {
   width: 100%;
-  margin-top: 1rem;
+  margin: 1rem 0 0.4rem 0;
 }
 
 .contrduction_smallbox .news .news_box .news_bottom h4 {
   font-size: 0.9rem;
   position: absolute;
-  top: 1.1rem;
-  left: 0.5rem;
+  top: 1.05rem;
+  left: 0.3rem;
 }
 
 .contrduction_smallbox .news .news_box .news_bottom p {
-  margin-top: 0.5rem;
-  font-size: 0.7rem;
+  text-indent: 2em;
+  font-size: 0.6rem;
   font-weight: 300;
-  line-height: 1.3rem;
+  margin-bottom: 0.5rem;
+  line-height: 1rem;
   text-align: justify;
 }
 
@@ -435,18 +419,22 @@ body {
   letter-spacing: 0.25rem;
 }
 
+.contrduction_smallbox .colume .show {
+  margin-top: 0.5rem;
+}
+
 .contrduction_smallbox .colume .show h3 {
-  font-size: 0.8rem;
-  margin-bottom: 0.4rem;
-  margin-top: 0.4rem;
+  font-size: 0.7rem;
+  margin-bottom: 0.3rem;
+  margin-top: 0.5rem;
 }
 
 .contrduction_smallbox .colume .show p {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 300;
   margin-bottom: 0.4rem;
+  line-height: 1rem;
   text-align: justify;
-  line-height: 1.3rem;
 }
 
 .contrduction_smallbox .colume .show .hide {
@@ -458,8 +446,8 @@ body {
 .contrduction_smallbox .colume .click_on {
   margin-top: 0.25rem;
   float: right;
-  width: 5rem;
-  height: 1.75rem;
+  width: 4.5rem;
+  height: 1.5rem;
   background: #A51C30;
   border-radius: 0.25rem;
 }
@@ -467,9 +455,9 @@ body {
 .contrduction_smallbox .colume .click_on p {
   text-align: center;
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 500;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
 }
 
 .contrduction_smallbox .tuijian {
@@ -489,27 +477,29 @@ body {
   font-size: 0.8rem;
   position: absolute;
   top: 1.1rem;
-  left: 1rem;
-  letter-spacing: 0.25rem;
+  left: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.contrduction_smallbox .tuijian .show {
+  margin-top: 0.5rem;
 }
 
 .contrduction_smallbox .tuijian .show p {
   float: left;
-  font-size: 0.7rem;
-  font-weight: 400;
-  margin-bottom: 0.15rem;
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
   text-align: justify;
-  line-height: 1.3rem;
+  font-size: 0.6rem;
+  line-height: 1rem;
 }
 
 .contrduction_smallbox .tuijian .show span {
   float: right;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   font-weight: 300;
-  margin-bottom: 0.75rem;
-  margin-top: 0.5rem;
-  line-height: 1.2rem;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  line-height: 1rem;
 }
 
 .contrduction_smallbox .tuijian .show .hide {
@@ -519,11 +509,10 @@ body {
 }
 
 .contrduction_smallbox .tuijian .click_on {
-  margin-bottom: 1.5rem;
   margin-top: 0.25rem;
   float: right;
-  width: 5rem;
-  height: 1.75rem;
+  width: 4.5rem;
+  height: 1.5rem;
   background: #A51C30;
   border-radius: 0.25rem;
 }
@@ -531,12 +520,13 @@ body {
 .contrduction_smallbox .tuijian .click_on p {
   text-align: center;
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 500;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
 }
 
 .contrduction_smallbox .hf_road {
+  padding-top: 1rem;
   width: 14rem;
   margin: 0 auto;
   position: relative;
@@ -544,11 +534,11 @@ body {
 
 .contrduction_smallbox .hf_road .road_book span {
   position: absolute;
-  top: 0.5rem;
+  top: 1.5rem;
   left: 0;
   display: inline-block;
-  width: 0.4rem;
-  height: 0.4rem;
+  width: 0.3rem;
+  height: 0.3rem;
   transform-origin: center center;
   transform: rotate(45deg);
   background: #A51C30;
@@ -558,21 +548,21 @@ body {
 
 .contrduction_smallbox .hf_road .road_book h3 {
   position: absolute;
-  top: 0.5rem;
+  top: 1.5rem;
   left: 1rem;
   display: block;
   width: 13rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #A51C30;
   float: left;
 }
 
 .contrduction_smallbox .hf_road .road_book p {
   position: absolute;
-  top: 1.65rem;
-  left: 1.5rem;
+  top: 2.65rem;
+  left: 0rem;
   padding-bottom: 0.75rem;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 300;
   line-height: 1rem;
   float: left;
@@ -580,7 +570,7 @@ body {
 }
 
 .contrduction_smallbox .hf_road .road_main {
-  padding-top: 3.5rem;
+  padding-top: 3rem;
 }
 
 .contrduction_smallbox .hf_road .road_main img {
@@ -597,11 +587,12 @@ body {
 }
 
 .contrduction_smallbox .hf_road .road_main .road_right p {
-  font-size: 0.7rem;
+  text-indent: 2em;
+  font-size: 0.6rem;
   font-weight: 300;
   margin-bottom: 0.4rem;
-  text-indent: 2em;
-  line-height: 1.3rem;
+  line-height: 1rem;
+  text-align: justify;
 }
 
 .contrduction_smallbox .hf_road .road_main .hide {
@@ -611,20 +602,19 @@ body {
 }
 
 .contrduction_smallbox .hf_road .road_main .hide p {
-  font-size: 0.7rem;
+  text-indent: 2em;
+  font-size: 0.6rem;
   font-weight: 300;
   margin-bottom: 0.4rem;
-  text-indent: 2em;
-  line-height: 1.3rem;
+  line-height: 1rem;
   text-align: justify;
 }
 
 .contrduction_smallbox .hf_road .road_main .click_on {
-  margin-bottom: 1.5rem;
   margin-top: 0.25rem;
   float: right;
-  width: 5rem;
-  height: 1.75rem;
+  width: 4.5rem;
+  height: 1.5rem;
   background: #A51C30;
   border-radius: 0.25rem;
 }
@@ -632,9 +622,9 @@ body {
 .contrduction_smallbox .hf_road .road_main .click_on p {
   text-align: center;
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 500;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
 }
 
 .contrduction_smallbox .hf_dream {
@@ -646,11 +636,11 @@ body {
 
 .contrduction_smallbox .hf_dream .road_book span {
   position: absolute;
-  top: 0.5rem;
+  top: 1.5rem;
   left: 0;
   display: inline-block;
-  width: 0.4rem;
-  height: 0.4rem;
+  width: 0.3rem;
+  height: 0.3rem;
   transform-origin: center center;
   transform: rotate(45deg);
   background: #A51C30;
@@ -660,21 +650,21 @@ body {
 
 .contrduction_smallbox .hf_dream .road_book h3 {
   position: absolute;
-  top: 0.5rem;
+  top: 1.5rem;
   left: 1rem;
   display: block;
   width: 13rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #A51C30;
   float: left;
 }
 
 .contrduction_smallbox .hf_dream .road_book p {
   position: absolute;
-  top: 1.7rem;
-  left: 2.25rem;
+  top: 2.5rem;
+  left: 1.5rem;
   padding-bottom: 0.75rem;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 300;
   line-height: 1rem;
   float: left;
@@ -682,7 +672,14 @@ body {
 }
 
 .contrduction_smallbox .hf_dream .road_main {
-  padding-top: 2.5rem;
+  padding-top: 3rem;
+}
+
+.contrduction_smallbox .hf_dream .road_main img {
+  display: block;
+  width: 11rem;
+  margin: 0 auto;
+  padding-bottom: 0.75rem;
 }
 
 .contrduction_smallbox .hf_dream .road_main img {
@@ -699,11 +696,11 @@ body {
 }
 
 .contrduction_smallbox .hf_dream .road_main .road_right p {
-  font-size: 0.7rem;
+  text-indent: 2em;
+  font-size: 0.6rem;
   font-weight: 300;
   margin-bottom: 0.4rem;
-  text-indent: 2em;
-  line-height: 1.3rem;
+  line-height: 1rem;
   text-align: justify;
 }
 
@@ -714,20 +711,19 @@ body {
 }
 
 .contrduction_smallbox .hf_dream .road_main .hide p {
-  font-size: 0.7rem;
+  text-indent: 2em;
+  font-size: 0.6rem;
   font-weight: 300;
   margin-bottom: 0.4rem;
-  text-indent: 2em;
-  line-height: 1.3rem;
+  line-height: 1rem;
   text-align: justify;
 }
 
 .contrduction_smallbox .hf_dream .road_main .click_on {
-  margin-bottom: 1rem;
   margin-top: 0.25rem;
   float: right;
-  width: 5rem;
-  height: 1.75rem;
+  width: 4.5rem;
+  height: 1.5rem;
   background: #A51C30;
   border-radius: 0.25rem;
 }
@@ -735,9 +731,9 @@ body {
 .contrduction_smallbox .hf_dream .road_main .click_on p {
   text-align: center;
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 500;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
 }
 
 .contrduction_smallbox .new_book {
@@ -750,11 +746,11 @@ body {
 
 .contrduction_smallbox .new_book .road_book span {
   position: absolute;
-  top: 0.5rem;
+  top: 1.5rem;
   left: 0;
   display: inline-block;
-  width: 0.4rem;
-  height: 0.4rem;
+  width: 0.3rem;
+  height: 0.3rem;
   transform-origin: center center;
   transform: rotate(45deg);
   background: #A51C30;
@@ -764,21 +760,21 @@ body {
 
 .contrduction_smallbox .new_book .road_book h3 {
   position: absolute;
-  top: 0.5rem;
+  top: 1.5rem;
   left: 1rem;
   display: block;
   width: 13rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #A51C30;
   float: left;
 }
 
 .contrduction_smallbox .new_book .road_book p {
   position: absolute;
-  top: 1.7rem;
-  left: 2.25rem;
+  top: 2.5rem;
+  left: 0rem;
   padding-bottom: 0.75rem;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 300;
   line-height: 1rem;
   float: left;
@@ -786,15 +782,16 @@ body {
 }
 
 .contrduction_smallbox .new_book .road_main {
-  padding-top: 2.5rem;
+  padding-top: 3rem;
 }
 
 .contrduction_smallbox .new_book .road_main p {
-  font-size: 0.7rem;
+  text-indent: 2em;
+  font-size: 0.6rem;
   font-weight: 300;
   margin-bottom: 0.4rem;
-  text-indent: 2em;
-  line-height: 1.3rem;
+  line-height: 1rem;
+  text-align: justify;
 }
 
 .contrduction_smallbox .new_book .hide {
@@ -804,19 +801,19 @@ body {
 }
 
 .contrduction_smallbox .new_book .hide p {
-  font-size: 0.7rem;
+  text-indent: 2em;
+  font-size: 0.6rem;
   font-weight: 300;
   margin-bottom: 0.4rem;
-  text-indent: 2em;
-  line-height: 1.3rem;
+  line-height: 1rem;
+  text-align: justify;
 }
 
 .contrduction_smallbox .new_book .click_on {
-  margin-bottom: 1.5rem;
   margin-top: 0.25rem;
   float: right;
-  width: 5rem;
-  height: 1.75rem;
+  width: 4.5rem;
+  height: 1.5rem;
   background: #A51C30;
   border-radius: 0.25rem;
 }
@@ -824,36 +821,37 @@ body {
 .contrduction_smallbox .new_book .click_on p {
   text-align: center;
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 500;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
 }
 
 .contrduction_smallbox .footer {
-  margin-top: 2.5rem;
+  margin: 0 auto;
+  margin-top: 2.25rem;
   width: 100%;
-  height: 6.5rem;
+  height: 4rem;
   background: #A51C30;
 }
 
 .contrduction_smallbox .footer .footer_logo {
-  padding-top: 1rem;
+  padding-top: 0.7rem;
 }
 
 .contrduction_smallbox .footer .footer_logo img {
   display: block;
-  width: 15rem;
+  width: 10rem;
   margin: 0 auto;
 }
 
 .contrduction_smallbox .footer_bottom {
   width: 100%;
-  height: 2.5rem;
-  padding-top: 1rem;
+  height: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 .contrduction_smallbox .footer_bottom img {
-  width: 11.5rem;
+  width: 9rem;
   display: block;
   margin: 0 auto;
 }

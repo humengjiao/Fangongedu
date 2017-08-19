@@ -47,7 +47,7 @@ body {
 }
 
 .team_smallbox {
-  display: block;
+  display: none;
 }
 
 .team_bigbox {
@@ -76,7 +76,7 @@ body {
 }
 
 .team_bigbox .wapper {
-  width: 62.5%;
+  width: 1200px;
   height: auto;
   margin: auto;
 }
@@ -103,16 +103,14 @@ body {
 }
 
 .team_bigbox .wapper header {
-  width: 100%;
+  width: 1200px;
   height: 120px;
-  display: flex;
+  margin: auto;
 }
 
 .team_bigbox .wapper header a:nth-child(1) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin-top: 12px;
+  float: left;
 }
 
 .team_bigbox .wapper header a:nth-child(1) .left {
@@ -121,24 +119,18 @@ body {
 }
 
 .team_bigbox .wapper header a:nth-child(2) {
-  flex: 1;
+  margin-top: 30px;
+  float: right;
 }
 
-.team_bigbox .wapper header a:nth-child(3) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.team_bigbox .wapper header a:nth-child(3) .right {
+.team_bigbox .wapper header a:nth-child(2) .right {
   width: 265px;
   height: auto;
   margin-top: 30px;
 }
 
 .team_bigbox .wapper nav {
-  width: 100%;
+  width: 1200px;
   height: 65px;
   background: #A51C30;
   display: flex;
@@ -148,50 +140,41 @@ body {
   width: 100%;
   height: 65px;
   margin: 0 auto;
-  display: flex;
 }
 
 .team_bigbox .wapper nav .list li {
+  width: 240px;
+  display: inline-block;
   line-height: 65px;
-  display: flex;
   float: left;
-  width: 18%;
   justify-content: center;
   align-items: center;
 }
 
-.team_bigbox .wapper nav .list li:nth-child(2n+1) {
-  width: 2%;
+.team_bigbox .wapper nav .list li:hover p {
+  color: #dab96b;
 }
 
-.team_bigbox .wapper nav .list li:first-child {
-  width: .5%;
-}
-
-.team_bigbox .wapper nav .list li:last-child {
-  width: .5%;
-}
-
-.team_bigbox .wapper nav .list li:nth-child(8) {
-  width: 23%;
-}
-
-.team_bigbox .wapper nav .list li a {
-  display: inline-block;
-  color: white;
-  display: flex;
-  flex: 1;
-}
-
-.team_bigbox .wapper nav .list li a p {
-  margin: auto;
-  font-size: 20px;
+.team_bigbox .wapper nav .list li:nth-child(3) p {
+  color: #dab96b;
 }
 
 .team_bigbox .wapper nav .list li img {
   display: inline-block;
   width: 10px;
   height: 10px;
+}
+
+.team_bigbox .wapper nav .list li a {
+  display: inline-block;
+}
+
+.team_bigbox .wapper nav .list li a p {
+  line-height: 65px;
+  padding: 0 64px;
+  color: white;
+  margin: auto;
+  font-size: 20px;
 }
 
 .team_bigbox .banner {
@@ -201,7 +184,7 @@ body {
 
 .team_bigbox .team_work {
   width: 100%;
-  height: 500px;
+  height: 400px;
   background: #fbfbfb;
 }
 
@@ -209,15 +192,13 @@ body {
   text-align: center;
   font-size: 36px;
   font-weight: 800;
-  color: #A51C30;
-  padding-top: 50px;
+  padding-top: 80px;
 }
 
 .team_bigbox .team_work p {
-  padding-top: 20px;
+  padding-top: 40px;
   display: block;
-  width: 1200px;
-  height: 300px;
+  width: 1000px;
   margin: 0 auto;
   font-size: 20px;
   line-height: 36px;
@@ -225,22 +206,23 @@ body {
 
 .team_bigbox .team_leader {
   width: 1200px;
-  height: 1200px;
+  height: 900px;
   margin: 0 auto;
 }
 
 .team_bigbox .team_leader .leader_one {
-  margin: 135px 0;
+  margin: 110px 0;
 }
 
 .team_bigbox .team_leader .leader_one img {
+  width: 300px;
   float: left;
 }
 
 .team_bigbox .team_leader .leader_one .one_section {
   float: right;
   display: block;
-  width: 700px;
+  width: 800px;
 }
 
 .team_bigbox .team_leader .leader_one .one_section h1 {
@@ -261,23 +243,25 @@ body {
 }
 
 .team_bigbox .team_leader .leader_one .one_section p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 46px;
+  text-align: justify;
 }
 
 .team_bigbox .team_leader .leader_two {
-  margin: 135px 0;
+  margin: 60px 0;
 }
 
 .team_bigbox .team_leader .leader_two img {
+  width: 300px;
   float: left;
 }
 
 .team_bigbox .team_leader .leader_two .two_section {
   float: right;
   display: block;
-  width: 700px;
+  width: 800px;
 }
 
 .team_bigbox .team_leader .leader_two .two_section h1 {
@@ -298,14 +282,14 @@ body {
 }
 
 .team_bigbox .team_leader .leader_two .two_section p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 46px;
 }
 
 .team_bigbox .footer {
   width: 100%;
-  height: 225px;
+  height: 200px;
   background: #A51C30;
 }
 
@@ -313,35 +297,33 @@ body {
   width: 1200px;
   height: auto;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 35px;
 }
 
 .team_bigbox .footer .footer_box .footer_logo {
+  margin-top: 7px;
   float: left;
 }
 
 .team_bigbox .footer .footer_box .footer_tel {
-  margin-top: 30px;
+  margin-top: 35px;
   float: right;
 }
 
 .team_bigbox .footer_bottom {
-  position: relative;
-  width: 100%;
-  height: 100px;
+  width: 370px;
+  height: 40px;
+  margin: auto;
+  margin-top: 16px;
 }
 
 .team_bigbox .footer_bottom p {
   font-size: 24px;
-  text-align: center;
   color: #1d1d1d;
-  font-weight: 500;
-  line-height: 100px;
-  margin-right: 100px;
+  float: left;
 }
 
 .team_bigbox .footer_bottom img {
-  position: absolute;
-  top: 38px;
-  left: 55%;
+  margin-top: 5px;
+  float: right;
 }

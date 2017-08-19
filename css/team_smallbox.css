@@ -51,65 +51,63 @@ body {
 }
 
 .team_smallbox {
-  width: 100%;
+  width: 16rem;
+  margin: auto;
 }
 
 .team_smallbox header .logo {
   float: left;
-  width: 2.5rem;
+  width: 6rem;
   height: auto;
-  margin: 0.5rem 0 0.5rem 0.5rem;
+  margin: 1rem 0 0 0.75rem;
 }
 
 .team_smallbox header .click {
-  width: 1.25rem;
+  width: 0.9rem;
   float: right;
-  margin-top: 1.75rem;
-  margin-right: 0.5rem;
+  margin-top: 1.85rem;
+  margin-right: 0.75rem;
 }
 
 .team_smallbox nav {
   overflow: hidden;
+  margin-top: 0.5rem;
   height: 0;
   width: 100%;
   transition: all .5s;
 }
 
 .team_smallbox nav .hide {
-  height: 10rem;
-  margin: 0.05rem 0.5rem 0 0.5rem;
+  height: 7.75rem;
+  margin: 0 0.35rem;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
-.team_smallbox nav ul li {
+.team_smallbox nav .hide li {
   width: 100%;
-  height: 2rem;
+  height: 1.5rem;
   border-bottom: 0.05rem solid #eee;
 }
 
-.team_smallbox nav ul li:last-child {
+.team_smallbox nav .hide li:last-child {
   border-bottom: none;
 }
 
-.team_smallbox nav ul li a {
-  height: 2rem;
+.team_smallbox nav .hide li a {
+  height: 1.5rem;
   display: block;
   border-radius: 0.25rem;
   color: #A51C30;
-  line-height: 2rem;
+  line-height: 1.5rem;
   text-indent: 2em;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 500;
 }
 
-.team_smallbox nav ul li.cur a {
+.team_smallbox .hide li.cur a {
   background: #A51C30;
   color: white;
-}
-
-.team_smallbox nav ul li a:hover {
-  background: #eee;
 }
 
 .team_smallbox .banner {
@@ -117,126 +115,131 @@ body {
 }
 
 .team_smallbox .team_work {
-  width: 280px;
+  width: 14rem;
   margin: auto;
 }
 
 .team_smallbox .team_work h3 {
   text-align: center;
-  font-size: 16px;
-  color: #A51C30;
-  padding-top: 30px;
+  font-size: 0.9rem;
+  padding-top: 1.5rem;
 }
 
 .team_smallbox .team_work p {
-  padding-top: 10px;
+  padding-top: 0.5rem;
   display: block;
-  width: 280px;
+  width: 14rem;
   margin: 0 auto;
-  font-size: 10px;
-  line-height: 20px;
+  font-size: 0.5rem;
+  line-height: 1rem;
+  font-weight: 300;
 }
 
 .team_smallbox .team_leader {
-  width: 280px;
+  width: 14rem;
   margin: 0 auto;
+  padding: 0.5rem 0;
 }
 
 .team_smallbox .team_leader .leader_one img {
   display: block;
-  width: 220px;
+  width: 11rem;
   margin: 0 auto;
-  padding: 30px 0 20px 0;
+  padding: 0.5rem 0 0.75rem 0;
 }
 
 .team_smallbox .team_leader .leader_one .one_section {
   display: block;
-  width: 280px;
+  width: 14rem;
 }
 
 .team_smallbox .team_leader .leader_one .one_section h1 {
+  text-indent: 2em;
   float: left;
-  font-size: 16px;
+  font-size: 0.7rem;
   color: #A51C30;
-  ppadding-top: 5px;
+  ppadding-top: 0.25remx;
 }
 
 .team_smallbox .team_leader .leader_one .one_section i {
   float: left;
-  font-size: 12px;
+  font-size: 0.5rem;
   font-weight: 400;
   color: #A51C30;
-  padding: 5px 0 0 16px;
+  padding: 0.25rem 0 0 0.6rem;
 }
 
 .team_smallbox .team_leader .leader_one .one_section p {
-  padding-top: 10px;
+  padding-top: 0.5rem;
   text-align: justify;
-  font-size: 10px;
+  font-size: 0.5rem;
   font-weight: 300;
-  line-height: 22px;
+  line-height: 1rem;
+  text-indent: 2em;
 }
 
 .team_smallbox .team_leader .leader_two img {
   display: block;
-  width: 220px;
+  width: 11rem;
   margin: 0 auto;
-  padding: 30px 0 20px 0;
+  padding: 2rem 0 0.75rem 0;
 }
 
 .team_smallbox .team_leader .leader_two .two_section {
   display: block;
-  width: 280px;
+  width: 14rem;
 }
 
 .team_smallbox .team_leader .leader_two .two_section h1 {
+  text-indent: 2em;
   float: left;
-  font-size: 16px;
+  font-size: 0.7rem;
   color: #A51C30;
-  ppadding-top: 5px;
+  ppadding-top: 0.25remx;
 }
 
 .team_smallbox .team_leader .leader_two .two_section i {
   float: left;
-  font-size: 12px;
+  font-size: 0.5rem;
   font-weight: 400;
   color: #A51C30;
-  padding: 5px 0 0 16px;
+  padding: 0.25rem 0 0 0.6rem;
 }
 
 .team_smallbox .team_leader .leader_two .two_section p {
-  padding-top: 10px;
+  padding-top: 0.5rem;
   text-align: justify;
-  font-size: 10px;
+  font-size: 0.5rem;
   font-weight: 300;
-  line-height: 22px;
+  line-height: 1rem;
+  text-indent: 2em;
 }
 
 .team_smallbox .footer {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   width: 100%;
-  height: 6.5rem;
+  height: 4rem;
   background: #A51C30;
 }
 
 .team_smallbox .footer .footer_logo {
-  padding-top: 1rem;
+  padding-top: 0.7rem;
 }
 
 .team_smallbox .footer .footer_logo img {
   display: block;
-  width: 15rem;
+  width: 10rem;
   margin: 0 auto;
 }
 
 .team_smallbox .footer_bottom {
   width: 100%;
-  height: 2.5rem;
-  padding-top: 1rem;
+  height: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 .team_smallbox .footer_bottom img {
-  width: 11.5rem;
+  width: 9rem;
   display: block;
   margin: 0 auto;
 }

@@ -51,65 +51,63 @@ body {
 }
 
 .map_smallbox {
-  width: 100%;
+  width: 16rem;
+  margin: auto;
 }
 
 .map_smallbox header .logo {
   float: left;
-  width: 2.5rem;
+  width: 6rem;
   height: auto;
-  margin: 0.5rem 0 0.5rem 0.5rem;
+  margin: 1rem 0 0 0.75rem;
 }
 
 .map_smallbox header .click {
-  width: 1.25rem;
+  width: 0.9rem;
   float: right;
-  margin-top: 1.75rem;
-  margin-right: 0.5rem;
+  margin-top: 1.85rem;
+  margin-right: 0.75rem;
 }
 
 .map_smallbox nav {
   overflow: hidden;
+  margin-top: 10px;
   height: 0;
   width: 100%;
   transition: all .5s;
 }
 
 .map_smallbox nav .hide {
-  height: 10rem;
-  margin: 0.05rem 0.5rem 0 0.5rem;
+  height: 7.75rem;
+  margin: 0 0.35rem;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
-.map_smallbox nav ul li {
+.map_smallbox nav .hide li {
   width: 100%;
-  height: 2rem;
+  height: 1.5rem;
   border-bottom: 0.05rem solid #eee;
 }
 
-.map_smallbox nav ul li:last-child {
+.map_smallbox nav .hide li:last-child {
   border-bottom: none;
 }
 
-.map_smallbox nav ul li a {
-  height: 2rem;
+.map_smallbox nav .hide li a {
+  height: 1.5rem;
   display: block;
   border-radius: 0.25rem;
   color: #A51C30;
-  line-height: 2rem;
+  line-height: 1.5rem;
   text-indent: 2em;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 500;
 }
 
-.map_smallbox nav ul li.cur a {
+.map_smallbox .hide li.cur a {
   background: #A51C30;
   color: white;
-}
-
-.map_smallbox nav ul li a:hover {
-  background: #eee;
 }
 
 .map_smallbox .banner {
@@ -117,28 +115,28 @@ body {
 }
 
 .map_smallbox .map {
-  width: 280px;
+  width: 14rem;
   margin: 0 auto;
 }
 
 .map_smallbox .map img {
-  padding-top: 30px;
+  padding-top: 1.5rem;
   display: block;
-  width: 150px;
+  width: 7.5rem;
   margin: 0 auto;
 }
 
 .map_smallbox .map p {
-  font-size: 14px;
+  font-size: 0.7rem;
   text-align: center;
   font-weight: 500;
-  line-height: 50px;
-  margin-bottom: 20px;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .map_smallbox .map .hello_box {
-  width: 255px;
-  height: 40px;
+  width: 11rem;
+  height: 1.5rem;
   margin: 0 auto;
 }
 
@@ -146,14 +144,15 @@ body {
   float: left;
   margin: 0 auto;
   display: block;
-  width: 100px;
-  height: 35px;
+  width: 4.5rem;
+  height: 1.5rem;
   background: #A51C30;
   color: white;
-  font-size: 14px;
+  font-size: 0.5rem;
   text-align: center;
-  line-height: 35px;
-  border-radius: 5px;
+  line-height: 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
 }
 
 .map_smallbox .map .hello_box span:nth-child(2) {
@@ -162,28 +161,28 @@ body {
 
 .map_smallbox .map .hello_box p {
   float: left;
-  font-size: 12px;
+  font-size: 0.4rem;
   display: inline-block;
-  line-height: 34px;
-  margin: 0 20px;
+  line-height: 1.5rem;
+  margin: 0 0.75rem;
 }
 
 .map_smallbox .email {
   text-align: center;
-  font-size: 14px;
-  margin-top: 24px;
+  font-size: 0.6rem;
+  margin-top: 0.75rem;
 }
 
 .map_smallbox .email_two {
   text-align: center;
-  font-size: 16px;
+  font-size: 0.7rem;
   color: #A51C30;
 }
 
 .map_smallbox .xiaoqu img {
-  width: 280px;
+  width: 14rem;
   display: block;
-  margin: 20px auto 30px auto;
+  margin: 1rem auto 1.5rem auto;
 }
 
 .map_smallbox .map_bottom {
@@ -192,30 +191,29 @@ body {
 }
 
 .map_smallbox .footer {
-  margin-top: -10px;
   width: 100%;
-  height: 6.5rem;
+  height: 4rem;
   background: #A51C30;
 }
 
 .map_smallbox .footer .footer_logo {
-  padding-top: 1rem;
+  padding-top: 0.7rem;
 }
 
 .map_smallbox .footer .footer_logo img {
   display: block;
-  width: 15rem;
+  width: 10rem;
   margin: 0 auto;
 }
 
 .map_smallbox .footer_bottom {
   width: 100%;
-  height: 2.5rem;
-  padding-top: 1rem;
+  height: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 .map_smallbox .footer_bottom img {
-  width: 11.5rem;
+  width: 9rem;
   display: block;
   margin: 0 auto;
 }

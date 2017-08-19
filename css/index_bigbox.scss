@@ -134,7 +134,7 @@ body {
                     &:hover p {
                         color: #dab96b;
                     }
-                    &:first-child {
+                    &:nth-child(1) {
                         p {
                             color: #dab96b;
                         }
@@ -444,40 +444,36 @@ body {
     }
     .footer {
         width: 100%;
-        height: 225px;
+        height: 200px;
         background: #A51C30;
         .footer_box {
             width: 1200px;
             height: auto;
             margin: 0 auto;
-            padding-top: 50px;
+            padding-top: 35px;
             .footer_logo {
                 margin-top: 7px;
                 float: left;
             }
             .footer_tel {
-                margin-top: 38px;
+                margin-top: 35px;
                 float: right;
             }
         }
     }
-    .footer_bottom {
-        position: relative;
-        width: 1200px;
-        height: 80px;
+    .footer_bottom {     
+        width: 370px;
+        height: 40px;
         margin: auto;
+         margin-top: 16px;
         p {
             font-size: 24px;
-            text-align: center;
             color: #1d1d1d;
-            font-weight: 500;
-            line-height: 80px;
-            margin-right: 100px;
+            float: left;
         }
         img {
-            position: absolute;
-            top: 29px;
-            left: 58%;
+            margin-top: 5px;
+            float: right;
         }
     }
 }
