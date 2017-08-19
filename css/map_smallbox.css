@@ -71,7 +71,7 @@ body {
 
 .map_smallbox nav {
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 0.5rem;
   height: 0;
   width: 100%;
   transition: all .5s;
@@ -170,7 +170,7 @@ body {
 .map_smallbox .email {
   text-align: center;
   font-size: 0.6rem;
-  margin-top: 0.75rem;
+  margin-top: 1rem;
 }
 
 .map_smallbox .email_two {

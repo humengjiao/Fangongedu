@@ -71,7 +71,7 @@ body {
 
 .contrduction_smallbox nav {
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 0.5rem;
   height: 0;
   width: 100%;
   transition: all .5s;

@@ -68,7 +68,7 @@
             }
             nav {
                 overflow: hidden;
-                margin-top: 10px;
+                margin-top: 10/$sc+rem;
                 height: 0;
                 width: 100%;
                 transition: all .5s;
@@ -206,7 +206,7 @@
                         }
                         span {
                             display: block;
-                            margin: 10px 0;
+                            margin: 10/$sc+rem 0;
                             a {
                                 float: right;
                                 width: 90/$sc+rem;
@@ -224,7 +224,7 @@
                 }
             }
             .team {
-                margin-top: 30/$sc+rem;
+                margin-top: 20/$sc+rem;
                 width: 100%;
                 text-align: center;
                 h3 {
@@ -313,7 +313,7 @@
                             color: #A51C30;
                         }
                         .conten_ads {
-                            padding: 0 20px;
+                            padding: 0 20/$sc+rem;
                             p {
                                 font-size: 10/$sc+rem;
                                 font-weight: 300;
@@ -323,7 +323,7 @@
                         }
                         span {
                             display: block;
-                            margin: 10/$sc+rem 0px 18/$sc+rem 20/$sc+rem;
+                            margin: 10/$sc+rem 0 18/$sc+rem 20/$sc+rem;
                             a {
                                 float: left;
                                 width: 90/$sc+rem;
@@ -346,6 +346,7 @@
                 text-align: center;
                 background-image: url(../img/zb_bk.png);
                 h3 {
+                    color: #000000;
                     font-size: 18/$sc+rem;
                     font-weight: 600;
                     padding: 30/$sc+rem 0 5/$sc+rem 0;
@@ -357,6 +358,7 @@
                     padding-bottom: 5/$sc+rem;
                 }
                 h4 {
+                    color: #000000;
                     display: block;
                     width: 280/$sc+rem;
                     margin: 0 auto;
